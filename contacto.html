@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaquerías</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
-    
+    <!--HEADER-->
+    <header>
+        <nav>
+            <a class="boton_html" href="index.html">
+                <img src="" alt="boton vaquerias" height="35" class="vaq_navanimada">
+            </a>
+
+            <div class="botonera">
+                <a class="boton_html" href="lareserva.html">LA RESERVA</a>
+                <a class="boton_html" href="galeria.html">GALERÍA</a>
+                <a class="boton_html" href="actividades.html">ACTIVIDADES</a>
+                <a class="boton_html" href="comollegar.html">CÓMO LLEGAR</a>
+                <a class="boton_html" href="contacto.html" id="nav_abierto">CONTACTO</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <!--inicio-->
+        <section class="contenedor_inicio">
+            <img>
+            <h1>¿Qúeres formar parte de nuestro equipo?</h1>
+
+            <!--Formulario-->
+            <section class="contenedor_form">
+                <article>
+                    <h2>Contactanos</h2>
+                    <p>Tu consulta es importante para nosotros. Completá el formulario y te responderemos a la brevedad
+                    </p>
+                </article>
+
+                <article class="informacion_form">
+
+                    <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
+                        enctype="text/plain">
+
+                        <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+
+                        <input type="email" name="Apellido" id="Apellido" placeholder="usuario@mail.com" required>
+
+                        <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
+                            required>
+
+                        <textarea name="Mensaje" id="Mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
+
+                        <input type="submit" id="boton_enviar" value="ENVIAR">
+                    </form>
+                </article>
+
+                <!--Datos de contacto-->
+                <article>
+                    <ul class="info_contacto">
+                        <li class="flex_li">
+                            <img src="" alt="icono_de_telefono" width="40">
+                            (+54) 23 567 765
+                        </li>
+
+                        <li class="flex_li">
+                            <img src="" alt="icono_mail" width="40">
+                            reservavaquerias@gmail.com
+                        </li>
+
+                        <li class="flex_li">
+                            <img src="" alt="icono_ubicacion" width="40" height="45">
+                            Valle Hermoso, Córdoba, Argentina
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h3>SUMATE A NUESTRO PORTAL</h3>
+                    <p>Unite al portal de datos de la reserva y accedé a información actualizada sobre su biodiversidad,
+                        proyectos y monitoreos ambientales.</p>
+                </article>
+
+                <div>
+                    <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
+                        required>
+                    <input type="submit" id="boton_enviar" value="SUSCRIBITE">
+                </div>
+            </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="caja_footer">
+        <div class="flex_footer">
+            <p class="texto_footer">Copyright © 2025</p>
+        </div>
+
+        <div id="footer_redes">
+            <a id="ig" href="" target="_blank" rel="noopener">
+                <img src="" alt="link instagram" width="54" height="54">
+            </a>
+
+            <a id="fb" href="" target="_blank" rel="noopener">
+                <img src="" alt="link facebook" width="54" height="54">
+            </a>
+
+            <a id="youtube" href="">
+                <img src="" alt="link linkedin" width="54" height="77">
+            </a>
+        </div>
+    </footer>
 </body>
+
+</html>
+</body>
+
 </html>
