@@ -14,3 +14,20 @@
     font-family: "Display bajada";
     src: url(fonts/ReemKufi-Regular.ttf), format("truetype");
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: var(--color_fondo);
+}
+
+
+:root {
+    --color_fondo: #f4ebdf;
+    --color_oliva: #867551;
+    --color_verde: #3f4021;
+    --color_terracota: #bc6c25;
+}
