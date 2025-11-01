@@ -31,3 +31,42 @@ body {
     --color_verde: #3f4021;
     --color_terracota: #bc6c25;
 }
+
+
+/*cuerpos tipográficos*/
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 5px 7px 3px var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 5.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--color_oliva);
+    font-family: "Montserrat";
+    font-size: 4.0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+p {
+    color: var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
