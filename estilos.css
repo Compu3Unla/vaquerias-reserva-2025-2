@@ -180,8 +180,19 @@ textarea {
     font-weight: 700;
     line-height: 100px;
 }
+
 .flex_li {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.contenedor_suscripcion {
+    background-color: var(--color_verde);
+    width: 60%;
+    display: flex;
+}
+
+.contenedor_suscripcion input {
+    width: 60%;
 }
