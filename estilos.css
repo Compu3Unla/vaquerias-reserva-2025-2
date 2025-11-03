@@ -30,13 +30,16 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     --color_fondo: #f4ebdf;
     --color_oliva: #867551;
     --color_verde: #3f4021;
     --color_terracota: #bc6c25;
 }
-
 
 /*cuerpos tipográficos*/
 h1 {
@@ -107,4 +110,79 @@ p {
 .contenedor_header {
     display: flex;
     flex-direction: column;
+}
+
+
+
+/*CONTACTO*/
+.contenedor_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 200px;
+}
+.contenedor_form {
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bajada_p {
+    font-style: italic;
+    width: 40%;
+    line-height: 35px;
+}
+
+.informacion_form {
+    background-color: var(--color_oliva);
+    border-radius: 50px;
+    width: 40%;
+    padding: 30px;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input,
+textarea {
+    font-family: "Montserrat";
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 15px;
+    width: 95%;
+}
+
+textarea {
+    resize: vertical;
+    height: 200px;
+    border-radius: 25px;
+}
+
+#boton_enviar {
+    background-color: var(--color_verde);
+    padding: 10px 0;
+    width: 20%;
+    color: white;
+    font-weight: 600;
+}
+
+.info_contacto {
+    color: var(--color_terracota);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+}
+.flex_li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
