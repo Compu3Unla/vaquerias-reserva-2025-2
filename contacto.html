@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaquerías</title>
-    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!--HEADER-->
-    <header >
+    <header>
         <nav class="contenedor_header">
             <a class="boton_index" href="index.html">
                 <img src="" alt="boton vaquerias" height="35" class="vaq_navanimada">
@@ -28,75 +28,71 @@
             <h1>¿Qúeres formar parte de nuestro equipo?</h1>
         </nav>
 
-        
+
     </header>
 
     <!--MAIN-->
     <main>
-        <!--inicio-->
-        <section class="contenedor_inicio">
+        <!--Formulario-->
+        <section  class="contenedor_form">
+                <h2>Contactanos</h2>
+                <p class="bajada_p">Tu consulta es importante para nosotros. Completá el formulario y te responderemos a
+                    la brevedad
+                </p>
+        </section>
+        
+        <section class="contenedor_flex">
+        <article class="informacion_form">
+            <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
+                enctype="text/plain">
 
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre y Apellido" required>
 
-            <!--Formulario-->
-            <section class="contenedor_form">
-                <article>
-                    <h2>Contactanos</h2>
-                    <p>Tu consulta es importante para nosotros. Completá el formulario y te responderemos a la brevedad
-                    </p>
-                </article>
+                <input type="text" name="Asunto" id="Asunto" placeholder="Asunto" maxlength="30" required>
 
-                <article class="informacion_form">
+                <input type="email" name="Email" id="Email" placeholder="usuario@mail.com" required>
 
-                    <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
-                        enctype="text/plain">
+                <textarea name="Mensaje" id="Mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
 
-                        <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+                <input type="submit" id="boton_enviar" value="ENVIAR">
+            </form>
+        </article>
 
-                        <input type="email" name="Apellido" id="Apellido" placeholder="usuario@mail.com" required>
+        <!--Datos de contacto-->
+        <article>
+            <ul class="info_contacto">
+                <li class="flex_li">
+                    <img src="img/contacto/contacto_svg/img_telefono.svg" alt="icono_de_telefono" width="30"
+                        height="35">
+                    (+54) 23 567 765
+                </li>
 
-                        <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
-                            required>
+                <li class="flex_li">
+                    <img src="img/contacto/contacto_svg/img_mail.svg" alt="icono_mail" width="30" height="23">
+                    reservavaquerias@gmail.com
+                </li>
 
-                        <textarea name="Mensaje" id="Mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
+                <li class="flex_li">
+                    <img src="img/contacto/contacto_svg/img_ubicacion.svg" alt="icono_ubicacion" width="25" height="35">
+                    Valle Hermoso, Córdoba, Argentina
+                </li>
+            </ul>
+        </article>
+        </section>
 
-                        <input type="submit" id="boton_enviar" value="ENVIAR">
-                    </form>
-                </article>
+        <section>
+            <article>
+                <h3>SUMATE A NUESTRO PORTAL</h3>
+                <p>Unite al portal de datos de la reserva y accedé a información actualizada sobre su biodiversidad,
+                    proyectos y monitoreos ambientales.</p>
+            </article>
 
-                <!--Datos de contacto-->
-                <article>
-                    <ul class="info_contacto">
-                        <li class="flex_li">
-                            <img src="" alt="icono_de_telefono" width="40">
-                            (+54) 23 567 765
-                        </li>
-
-                        <li class="flex_li">
-                            <img src="" alt="icono_mail" width="40">
-                            reservavaquerias@gmail.com
-                        </li>
-
-                        <li class="flex_li">
-                            <img src="" alt="icono_ubicacion" width="40" height="45">
-                            Valle Hermoso, Córdoba, Argentina
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <section>
-                <article>
-                    <h3>SUMATE A NUESTRO PORTAL</h3>
-                    <p>Unite al portal de datos de la reserva y accedé a información actualizada sobre su biodiversidad,
-                        proyectos y monitoreos ambientales.</p>
-                </article>
-
-                <div>
-                    <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
-                        required>
-                    <input type="submit" id="boton_enviar" value="SUSCRIBITE">
-                </div>
-            </section>
+            <div>
+                <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
+                    required>
+                <input type="submit" id="boton_enviar" value="SUSCRIBITE">
+            </div>
+        </section>
     </main>
 
     <!--FOOTER-->
