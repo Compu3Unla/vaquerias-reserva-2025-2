@@ -44,7 +44,7 @@ h1 {
     text-align: center;
     text-shadow: 5px 7px 3px var(--color_verde);
     font-family: "Montserrat";
-    font-size: 7rem;
+    font-size: 5.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -101,4 +101,10 @@ p {
 #nav_abierto {
     background-color: var(--color_verde);
     color: white;
+}
+
+/*HEADER*/
+.contenedor_header {
+    display: flex;
+    flex-direction: column;
 }
