@@ -130,6 +130,11 @@ nav {
     border: none;
 }
 
+.contenedor_header img,
+#forma_irregular {
+  display: block;
+  width: 100%;
+}
 
 .contenedor_header h1 {
     position: absolute;
@@ -152,7 +157,7 @@ nav {
 .caja_footer {
     position: relative;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .caja_footer img {
@@ -361,7 +366,7 @@ textarea {
     align-items: center;
     border-radius: 60px;
     padding: 35px;
-    margin: 60px auto;
+    margin: 40px auto;
     box-shadow: 20px 15px 30px 0 var(--color_oliva);
 }
 
