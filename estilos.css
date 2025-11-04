@@ -127,7 +127,6 @@ nav {
     position: relative;
     width: 100%;
     margin-top: 300px;
-
 }
 
 .caja_footer img {
@@ -146,7 +145,6 @@ nav {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-
 }
 
 #footer_redes {
@@ -159,7 +157,6 @@ nav {
     gap: 100px;
 }
 
-/* Estilos adicionales para los enlaces de redes sociales si es necesario */
 #fb img, #ig img {
     width: 50px;
     height: 50px;
@@ -172,6 +169,29 @@ nav {
 
 /*HEADER*/
 
+.contenedor_header {
+    position: relative; 
+    width: 100%; 
+    margin: 0; 
+    overflow: hidden; 
+}
+
+.contenedor_header h1 {
+    position: absolute; 
+    z-index: 1; 
+    top: 200px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.contenedor_header nav {
+    position: absolute; 
+    z-index: 20; 
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 90%; 
+}
 
 
 /*CONTACTO*/
@@ -195,7 +215,7 @@ nav {
     display: flex;
     align-items: center;
     margin-left: 80px;
-    gap: 60px;
+    gap: 160px;
 
 }
 
