@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaquerías</title>
+    <title>Reserva Natural | VAQUERÍAS</title>
     <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg" href="img/svg/logo_head.svg" />
 </head>
 
 <body>
     <!--HEADER-->
-    <header>
-        <nav class="contenedor_header">
+    <header class="contenedor_header">
+        <nav>
             <a class="boton_index" href="index.html">
                 <img src="img/svg/img_logo.svg" alt="boton vaquerias" width="69" height="53" class="vaq_navanimada">
             </a>
@@ -23,38 +24,41 @@
                 <a class="boton_html" href="comollegar.html">CÓMO LLEGAR</a>
                 <a class="boton_html" href="contacto.html" id="nav_abierto">CONTACTO</a>
             </div>
-
-            <img src="img/contacto/img_headercontacto.jpg" width="1920" height="760" alt="header contacto">
-            <h1>¿Qúeres formar parte de nuestro equipo?</h1>
         </nav>
     </header>
 
     <!--MAIN-->
     <main>
-        <!--Formulario-->
-        <section class="contenedor_form">
+
+        <!--Sección arriba-->
+        <section class="cont_contacto">
             <h2>Contactanos</h2>
-            <p class="bajada_p">Tu consulta es importante para nosotros. Completá el formulario y te responderemos a
+            <p>Tu consulta es importante para nosotros. Completá el formulario y te responderemos a
                 la brevedad
             </p>
         </section>
 
-        <section class="contenedor_contacto">
-            <article class="informacion_form">
+        <!--Sección central-->
+        <section class="contenedor_arriba">
+            <!--Formulario-->
+            <article class="contenedor_form">
                 <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
                     enctype="text/plain">
+                    <div class="flex_identidad">
+                        <input type="text" name="nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
 
-                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre y Apellido"
-                        required>
+                        <input type="text" name="Apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
+                    </div>
 
-                    <input type="text" name="Asunto" id="Asunto" placeholder="Asunto" maxlength="30" required>
+                    <input type="text" name="Asunto" id="asunto" placeholder="Asunto" maxlength="30" required>
 
-                    <input type="email" name="Email" id="Email" placeholder="usuario@mail.com" required>
+                    <input type="email" name="Email" id="email_contacto" placeholder="usuario@mail.com" required>
 
-                    <textarea name="Mensaje" id="Mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
+                    <textarea name="Mensaje" id="mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
 
                     <input type="submit" id="boton_enviar" value="ENVIAR">
                 </form>
+
             </article>
 
             <!--Datos de contacto-->
@@ -78,42 +82,45 @@
                     </li>
                 </ul>
             </article>
+
         </section>
 
-        <section class="contenedor_suscripcion">
-            <article>
-                <h3>SUMATE A NUESTRO PORTAL</h3>
-                <p>Unite al portal de datos de la reserva y accedé a información actualizada sobre su biodiversidad,
-                    proyectos y monitoreos ambientales.</p>
-            </article>
+        <!--Datos de contacto-->
 
-            <div>
-                <input type="text" name="Mail" id="Mail" placeholder="Me interesan tus servicios" maxlength="30"
-                    required>
-                <input type="submit" id="boton_enviar" value="SUSCRIBITE">
-            </div>
+        <!--Suscripción-->
+        <section class="cont_suscribite">
+            <h3>SUMATE A NUESTRO PORTAL</h3>
+            <p>
+                Unite al portal de datos de la reserva y accedé a información actualizada
+                sobre su biodiversidad, proyectos y monitoreos ambientales.
+            </p>
+
+            <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
+                enctype="text/plain" class="form_suscripcion">
+                <input type="email" placeholder="usuario@mail.com">
+                <input type="submit" id="boton_sus" value="SUSCRIBIRSE">
+            </form>
         </section>
     </main>
 
     <!--FOOTER-->
     <footer class="caja_footer">
-
-        <img src="img/svg/img_formairregular.svg" width="1920" height="194" alt="imagen de footer">
+        <img src="img/svg/footer/img_footer.svg" width="1920" height="180" alt="imagen de footer">
         <div class="flex_footer">
-            <p class="texto_footer">Copyright © 2025</p>
+            <p>Copyright © 2025</p>
         </div>
 
         <div id="footer_redes">
-            <a id="ig" href="" target="_blank" rel="noopener">
-                <img src="" alt="link instagram" width="54" height="54">
+            <a id="ig" href="https://www.instagram.com/reservanaturalvaquerias/?hl=es" target="_blank" rel="noopener">
+                <img src="img/svg/footer/img_instagram.svg" alt="link instagram" width="50" height="50">
             </a>
 
-            <a id="fb" href="" target="_blank" rel="noopener">
-                <img src="" alt="link facebook" width="54" height="54">
+            <a id="fb" href="https://www.facebook.com/RVNUNC/?locale=es_LA" target="_blank" rel="noopener">
+                <img src="img/svg/footer/img_facebook.svg" alt="link facebook" width="50" height="50">
             </a>
 
-            <a id="youtube" href="">
-                <img src="" alt="link linkedin" width="54" height="77">
+            <a id="youtube" href="https://www.youtube.com/watch?v=3rh4YRrOVUo" target="_blank" rel="noopener">
+                <img src="img/svg/footer/img_youtube.svg" alt="link youtube" width="71" height="50">
             </a>
         </div>
     </footer>
@@ -121,5 +128,3 @@
 
 </html>
 </body>
-
-</html>
