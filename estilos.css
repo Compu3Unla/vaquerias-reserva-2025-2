@@ -122,6 +122,32 @@ nav {
     transform: scale(1.5);
 }
 
+/*HEADER*/
+.contenedor_header{
+    position: relative;
+    width: 100%;  
+    overflow: hidden;
+    border: none;
+}
+
+
+.contenedor_header h1 {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor_header nav {
+    position: absolute;
+    z-index: 20;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
 /*FOOTER*/
 .caja_footer {
     position: relative;
@@ -157,7 +183,8 @@ nav {
     gap: 100px;
 }
 
-#fb img, #ig img {
+#fb img,
+#ig img {
     width: 50px;
     height: 50px;
 }
@@ -167,31 +194,71 @@ nav {
     width: 71px;
 }
 
-/*HEADER*/
-
-.contenedor_header {
-    position: relative; 
-    width: 100%; 
-    margin: 0; 
-    overflow: hidden; 
+/*GALERÍA*/
+.fauna {
+    margin: 0;
+    padding: 50px;
+    border: none;
+    position: relative;
 }
 
-.contenedor_header h1 {
-    position: absolute; 
-    z-index: 1; 
-    top: 200px; 
-    left: 50%;
-    transform: translateX(-50%); 
+#forma_irregular {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.contenedor_header nav {
-    position: absolute; 
-    z-index: 20; 
-    top: 10px; 
-    left: 50%;
-    transform: translateX(-50%); 
-    width: 90%; 
+.fauna h2{
+    color: var(--color_fondo);
+    position: relative;
 }
+
+.flora {
+    margin-top: 90px;
+    padding: 50px;
+    border: none;
+    
+}
+.flora h2 {
+    color: var(--color_terracota);
+
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card {
+    position: relative;
+    left: 0;
+    width: 100%;
+    border-radius: 70px;
+    height: 480px;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    flex: .15;
+    margin-top: 10px;
+}
+
+.card img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
 
 
 /*CONTACTO*/
@@ -216,7 +283,6 @@ nav {
     align-items: center;
     margin-left: 80px;
     gap: 160px;
-
 }
 
 /*formulario*/
