@@ -32,32 +32,51 @@
     <!--MAIN-->
     <main>
         <!--Sección intereses-->
-        <section class="flex_slide">
-            <!--Informacion-->
-            <div>
-                <!--Slider ilustraciones-->
-                <div class="slider_container">
-                    <input type="radio" name="slider" id="slide1" checked>
-                    <input type="radio" name="slider" id="slide2">
-                    <input type="radio" name="slider" id="slide3">
+        <section class="slider">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
 
-                    <div class="slide_workspace">
-                        <img src="img/index/contenedor/img_fauna.jpg" alt="ilustracion 1" class="img1" width="827px"
-                            height="578px">
-                        <img src="img/index/contenedor/img_flora.jpg" alt="ilustracion 2" class="img2" width="827px"
-                            height="578px">
-
-                        <img src="img/index/contenedor/img_historia.jpg" alt="ilustracion 4" class="img3" width="827px"
-                            height="578px">
-                    </div>
-                    <div class="puntos_space">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/index/contenedor/img_historia.jpg" alt="imagen de historia" width="827" height="578">
+                    <div class="texto">
+                        <h2>Un viaje al corazón de la reserva</h2>
+                        <p>La Reserva Vaquería es un refugio de vida, memoria y biodiversidad. Ubicada en el corazón de las Sierras Chicas, es mucho más que un espacio natural, es un testimonio vivo de la resistencia y adaptación de la naturaleza. Aquí, cada rincón guarda la historia del territorio y de quienes lo habitaron. Conocé su y descubrí el valor de lo que aún podemos conservar.
+                        </p>
+                    <a href="lareserva.html">+ INFO</a>
                     </div>
                 </div>
+
+                <div class="slide">
+                    <img src="img/index/contenedor/img_fauna.jpg" alt="imagen de fauna" width="827" height="578">
+                    <div class="texto">
+                        <h2>La fauna silvestre de Vaquerías</h2>
+                        <p>En sus rincones más escondidos, animales como el puma, el pecarí y las numerosas aves que migran por el cielo, encuentran su hogar. Cada uno de ellos juega un papel fundamental, ayudando a mantener el equilibrio de la naturaleza que los rodea. Explorá la fauna de la Vaquería y descubrí cómo podemos asegurar su futuro en este santuario natural.
+                        </p>
+                        <a href="lareserva.html">+ INFO</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/index/contenedor/img_flora.jpg" alt="imagen de vaquerías" width="827" height="578">
+                    <div class="texto">
+                        <h2>La memoria verde de la Vaquería</h2>
+                        <p>Árboles imponente y arbustos silvestres que han existido por siglos dan forma a un paisaje único, donde la naturaleza prospera. Cada planta tiene su papel en este ecosistema, contribuyendo a la salud del suelo, el agua y la fauna que habita en la reserva. Descubrí la riqueza de la vegetación de la Vaquería y el papel fundamental en este lugar sagrado.
+                        </p>
+                        <a href="lareserva.html">+ INFO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </section>
 
+        <!--Sección aventuras-->
         <section class="cont_actindex">
             <h2>Tu aventura en Vaquerías te espera</h2>
             <img src="img/index/img_section2.jpg" alt="fondo de seccion dos">
@@ -67,12 +86,13 @@
                 <img src="" alt="imagen irregular 2">
                 <img src="" alt="imagen irregular 2">
 
-            <p>Disfrutá de caminatas, talleres y actividades únicas que te acercarán a su flora, fauna y la historia que la rodea. Conocé este santuario natural y sumate a la protección de su biodiversidad. ¡Tu experiencia en la Vaquería te espera!</p>
-            <a href="actividades.html" id="boton_index">VIVI LA EXPERIENCIA</a>
-
+                <p>Disfrutá de caminatas, talleres y actividades únicas que te acercarán a su flora, fauna y la historia
+                    que la rodea. Conocé este santuario natural y sumate a la protección de su biodiversidad. ¡Tu
+                    experiencia en la Vaquería te espera!</p>
+                <a href="actividades.html" id="boton_index">VIVI LA EXPERIENCIA</a>
             </div>
 
-            
+
         </section>
     </main>
 
