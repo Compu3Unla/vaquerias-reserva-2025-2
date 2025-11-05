@@ -435,18 +435,20 @@ input[type="radio"] {
 }
 
 .cont_contacto p {
-    color: var(--color_oliva);
+    color: var(--color_verde);
     font-size: 1.8rem;
     font-style: italic;
     line-height: 40px;
+    font-weight: 500;
 }
 
 /*sección central*/
 .contenedor_arriba {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     margin-left: 80px;
-    gap: 160px;
+
 }
 
 /*formulario*/
