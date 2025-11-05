@@ -423,14 +423,12 @@ input[type="radio"] {
     border-radius: 60px;
 }
 
-/*como llegar*/
+/*COMO LLEGAR*/
 .auto_como_llegar{
-    
     display: flex;
     width: 60%;
     align-items: center;
     gap: 25px;
-
 }
 
 /*CONTACTO*/
