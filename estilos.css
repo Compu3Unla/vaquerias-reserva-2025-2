@@ -701,6 +701,7 @@ p .subtitulo-flora {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     margin: 20px;
 }
 .icon_como_llegar {
