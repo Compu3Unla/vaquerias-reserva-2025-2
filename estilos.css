@@ -714,6 +714,10 @@ p .subtitulo-flora {
     align-items: center;
 }
 
+.foto_mapa{
+    border-radius: 20px;
+}
+
 /* CONTACTO */
 /*sección arriba*/
 .cont_contacto {
