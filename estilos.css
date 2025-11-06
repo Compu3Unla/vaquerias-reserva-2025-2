@@ -393,18 +393,37 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
-    gap: 120px;
+    gap: 118px;
 }
 
 .texto-reserva h2 {
     font-size: 2rem;
     color: var(--color_terracota);
+    margin-bottom: 15px;
 }
 
 .imagen-reserva img {
     border-radius: 36px;
 }
 
+.nuestra-fauna {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.animales {
+    border-radius: 20px;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
 
 /*GALERÍA*/
 .fauna {
@@ -473,7 +492,7 @@ input[type="radio"] {
 }
 
 /*COMO LLEGAR*/
-.auto_como_llegar {
+.auto_como_llegar{
     display: flex;
     width: 60%;
     align-items: center;
@@ -796,7 +815,6 @@ form {
 
     .caja_footer img {
         height: auto;
-        width: auto;
     }
 
     .flex_footer p {
@@ -809,19 +827,12 @@ form {
     #footer_redes {
         position: static;
         justify-content: center;
-        gap: 100px;
-        margin: 0;
-        padding: 10px;
+        gap: 40px;
+        margin: 20px 0;
     }
 
-    #fb img,
-    #ig img {
-        width: 25px;
-        height: 25px;
-    }
-
-    #youtube img {
-        height: 25px;
-        width: 34px;
+    #footer_redes img {
+        width: 35px;
+        height: 35px;
     }
 }
