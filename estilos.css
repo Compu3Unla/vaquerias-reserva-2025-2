@@ -358,9 +358,52 @@ input[type="radio"] {
 
 /*LA RESERVA*/
 
+.subtitulo-reserva h2 {
+    color: var(--color_terracota);
+    margin-left: 95px;
+}
+.subtitulo-reserva p {
+    font-style: italic;
+    color: var(--color_terracota);
+    margin-left: 95px;
+}
 
+.video-reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.video-reserva video {
+    width: 1462px;
+    height: 822px;
+    border: var(--color_verde), solid, 10px;
+    border-radius: 36px;
+}
 
+/*sección textos abajo del video*/
+
+.contenedor2 {
+  margin: 0 auto;
+  padding: 60px 95px;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 120px;
+}
+
+.texto-reserva h2 {
+    font-size: 2rem;
+    color: var(--color_terracota);
+}
+
+.imagen-reserva img {
+    border-radius: 36px;
+}
 
 
 /*GALERÍA*/
