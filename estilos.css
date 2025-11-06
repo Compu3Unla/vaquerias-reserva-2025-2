@@ -409,6 +409,7 @@ input[type="radio"] {
     color: var(--color_terracota);
     margin-left: 95px;
 }
+
 .subtitulo-reserva p {
     font-style: italic;
     color: var(--color_terracota);
@@ -432,9 +433,10 @@ input[type="radio"] {
 /*sección textos abajo del video*/
 
 .contenedor2 {
-  margin: 0 auto;
-  padding: 60px 95px;
+    margin: 0 auto;
+    padding: 60px 95px;
 }
+
 .bloque {
     display: flex;
     align-items: center;
@@ -553,7 +555,7 @@ p .subtitulo-flora {
 }
 
 .imagen-contenido img {
-margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .contenido-flora {
@@ -569,26 +571,64 @@ margin-bottom: 70px;
 }
 
 /*ACTIVIDADES*/
-.margen_izq, .margen_der {
+
+.margen_izq{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
     margin: 90px;
+    gap: 100px;
 }
 
-.margen_izq h3, 
+.margen_der {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.margen_der img:nth-child(1) {
+    position: absolute;
+    width: 1800px;
+    height: 700px;
+    max-width: 1800px;
+    z-index: 1;
+}
+
+#margin_cero img:nth-child(1){
+    right: 0;
+}
+  
+.margen_der img:nth-child(2) {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.margen_der article {
+    position: absolute;
+    top: 45%;
+    right: 24%;
+    transform: translateY(-50%);
+    width:30%;
+    z-index: 2;
+
+}
+
+.margen_izq h3,
 .margen_der h3 {
     color: var(--color_terracota);
     margin: 0;
     margin-bottom: 10px;
 }
 
-.margen_izq article, .margen_der article {
+.margen_izq article {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
+
 
 /*GALERÍA*/
 .fauna {
@@ -657,7 +697,7 @@ margin-bottom: 70px;
 }
 
 /*COMO LLEGAR*/
-.auto_como_llegar{
+.auto_como_llegar {
     display: flex;
     width: 60%;
     align-items: center;
