@@ -434,6 +434,7 @@ input[type="radio"] {
 .contenedor2 {
   margin: 0 auto;
   padding: 60px 95px;
+}
 /*ACTIVIDADES*/
 .margen_izq, .margen_der {
     display: flex;
