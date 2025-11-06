@@ -33,49 +33,7 @@ ul {
     --color_terracota: #bc6c25;
 }
 
-/*cuerpos tipográficos*/
-h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 5px 7px 3px var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 4.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 10px 60px;
-}
-
-h2 {
-    color: var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 0;
-}
-
-h3 {
-    color: white;
-    font-family: "Montserrat";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    margin: 15px;
-}
-
-p {
-    color: var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 0;
-}
-
-/*NAVEGADOR*/
+/*navegadores para los html*/
 nav {
     display: flex;
     align-items: end;
@@ -122,7 +80,7 @@ nav {
     transform: scale(1.5);
 }
 
-/*HEADER*/
+/*header para los html*/
 .contenedor_header {
     position: relative;
     width: 100%;
@@ -153,7 +111,7 @@ nav {
     width: 90%;
 }
 
-/*FOOTER*/
+/*footer para los html*/
 .caja_footer {
     position: relative;
     width: 100%;
@@ -199,10 +157,51 @@ nav {
     width: 71px;
 }
 
+/*cuerpos tipográficos para los html*/
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 5px 7px 3px var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 60px;
+}
+
+h2 {
+    color: var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px;
+}
+
+p {
+    color: var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+
 
 /*INDEX*/
-
-/*header*/
 #header_index h1 {
     text-align: left;
     font-size: 7rem;
@@ -380,7 +379,6 @@ input[type="radio"] {
 .cont_actindex p {
     font-size: 1.8rem;
     max-width: 600px;
-
 }
 
 #boton_index {
@@ -409,6 +407,7 @@ input[type="radio"] {
     color: var(--color_terracota);
     margin-left: 95px;
 }
+
 .subtitulo-reserva p {
     font-style: italic;
     color: var(--color_terracota);
@@ -432,9 +431,10 @@ input[type="radio"] {
 /*sección textos abajo del video*/
 
 .contenedor2 {
-  margin: 0 auto;
-  padding: 60px 95px;
+    margin: 0 auto;
+    padding: 60px 95px;
 }
+
 .bloque {
     display: flex;
     align-items: center;
@@ -553,7 +553,7 @@ p .subtitulo-flora {
 }
 
 .imagen-contenido img {
-margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .contenido-flora {
@@ -569,26 +569,64 @@ margin-bottom: 70px;
 }
 
 /*ACTIVIDADES*/
-.margen_izq, .margen_der {
+
+.margen_izq {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
     margin: 90px;
+    gap: 100px;
 }
 
-.margen_izq h3, 
+.margen_der {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.margen_der img:nth-child(1) {
+    position: absolute;
+    width: 1800px;
+    height: 700px;
+    max-width: 1800px;
+    z-index: 1;
+}
+
+#margin_cero img:nth-child(1) {
+    right: 0;
+}
+
+.margen_der img:nth-child(2) {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.margen_der article {
+    position: absolute;
+    top: 45%;
+    right: 24%;
+    transform: translateY(-50%);
+    width: 30%;
+    z-index: 2;
+
+}
+
+.margen_izq h3,
 .margen_der h3 {
     color: var(--color_terracota);
     margin: 0;
     margin-bottom: 10px;
 }
 
-.margen_izq article, .margen_der article {
+.margen_izq article {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
+
 
 /*GALERÍA*/
 .fauna {
@@ -657,14 +695,26 @@ margin-bottom: 70px;
 }
 
 /*COMO LLEGAR*/
-.auto_como_llegar{
+
+#como_llegar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon_como_llegar {
     display: flex;
     width: 60%;
     align-items: center;
     gap: 25px;
 }
 
-/*CONTACTO*/
+.art_como_llegar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CONTACTO */
 /*sección arriba*/
 .cont_contacto {
     margin-left: 45px;
@@ -685,54 +735,69 @@ margin-bottom: 70px;
 .contenedor_arriba {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     margin-left: 80px;
+    gap: 50px;
 
 }
 
 /*formulario*/
-.contenedor_form form {
+.formulario {
+    background: var(--color_oliva);
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    flex: 1;
+    border-radius: 30px;
+    max-width: 800px;
+    margin-left: 90px;
+}
+
+.formulario form {
+    padding: 30px;
+    gap: 24px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background-color: var(--color_oliva);
-    padding: 30px 30px;
-    border-radius: 60px;
 }
 
-.flex_identidad {
-    display: flex;
-    gap: 10px;
-    width: 100%;
+.formulario input,
+.formulario textarea {
+    border: 0;
+    border-radius: 40px;
+    min-height: 40px;
 }
 
-.flex_identidad input {
-    flex: 1;
-}
-
-input,
-textarea {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    border: none;
-    border-radius: 35px;
-    padding: 15px 25px;
-}
-
-textarea {
+.formulario textarea {
+    padding: 65px;
     resize: vertical;
     height: 200px;
 }
 
+.formu_flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#nombre-apellido {
+    display: flex;
+    gap: 15px;
+}
+
 #boton_enviar {
-    background-color: var(--color_verde);
-    margin: auto;
-    padding: 12px;
-    width: 40%;
-    color: white;
-    font-weight: 600;
     border: none;
-    border-radius: 35px;
+    border-radius: 30px;
+    background-color: var(--color_verde);
+    padding: 12px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: auto;
+    width: 40%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -777,160 +842,299 @@ textarea {
     margin-bottom: 30px;
 }
 
-form {
+.form_suscripcion {
     display: flex;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
+    border-radius: 60px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
+
 .form_suscripcion input[type="email"] {
-    flex: 6;
-    padding: 12px 20px;
+    flex-grow: 1;
+    padding: 12px 15px;
     border: none;
-    outline: none;
-    border-radius: 60px 0 0 60px;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
+    border-radius: 10px 0 0 10px;
+    font-size: 0.9rem;
 }
 
 #boton_sus {
-    flex: 1;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 0 60px 60px 0;
     background-color: var(--color_oliva);
     color: white;
+    padding: 12px 20px;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 0.9rem;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s ease-in;
 }
 
 #boton_sus:hover {
     background-color: var(--color_terracota);
 }
 
-
-
 /*MEDIA RESPONSIVE*/
 
-/*contacto*/
-@media screen and (max-width: 500px) {
+/*media responsive para lareserva.html*/
+@media only screen and (max-width: 500px) {
 
+    html,
     body {
         overflow-x: hidden;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        padding: 10px 20px;
-        text-shadow: 2px 3px 2px var(--color_verde);
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
+    /* header */
     .contenedor_header img {
+        width: 100%;
         height: auto;
     }
 
     .contenedor_header h1 {
-        top: 20%;
-        width: 90%;
+        font-size: 3.2rem;
+        padding: 0 15px;
+        text-align: center;
     }
 
-    nav {
+    .subtitulo-reserva h2{
+        font-size: 2.9rem;
+}
+    .subtitulo-reserva h2,
+    .subtitulo-reserva p {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    /*video*/
+    .video-reserva {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .video-reserva video {
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+
+    }
+
+    /*contenedor 2*/
+    .contenedor2 {
+        padding: 30px 20px;
+    }
+
+    .bloque {
+        flex-direction: column;
+    }
+
+    .texto-reserva h2 {
+        font-size: 2rem;
+        /* Reducimos el tamaño del título */
+        text-align: center;
+    }
+
+    .texto-reserva p {
+        font-size: 1rem;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    .imagen-reserva img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /*fauna*/
+    .nuestra-fauna {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin: 10px 0;
+        margin: 30px 20px;
+        gap: 40px;
     }
 
-    .boton_index {
-        display: block;
+    .fauna-reserva {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .fauna-reserva h2 {
+        font-size: 1.8rem;
+    }
+
+    .img-container:hover {
+        transform: translateY(-5px) scale(1.03);
+    }
+
+    .img-container:hover img {
+        transform: scale(1.03);
+    }
+
+    /*sección aves*/
+    .seccion-aves {
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .texto-aves {
+        width: 100%;
+        /* Ocupa todo el ancho */
+    }
+
+   .aves img {
+        width: 80%;
+
+        height: auto;
+    }
+
+    /* Ajuste de tipografía de números y especies */
+    h2 .italic {
+        font-size:2.7rem;
+    }
+    p .numeros,
+    p .grande {
+        font-size: 3rem;
+    }
+
+    /* sección flora*/
+    .flora2 {
+        /* Apilamos y ajustamos el margen */
+        display: flex;
+        flex-direction: column-reverse;
+        /* Imagen abajo, contenido arriba */
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .contenido-flora {
+
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-left: 0;
+        text-align: left;
+        padding-bottom: 30px;
+
+    }
+
+    p .subtitulo-flora {
+        font-size: 1.2rem;
+    }
+
+    .imagen-contenido img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/*media responsive contacto.html*/
+@media (max-width: 500px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* header */
+    .contenedor_header img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor_header h1 {
+        font-size: 3.2rem;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    /* Navegación*/
+    nav {
+        flex-direction: column;
+        /* Apilamos los elementos de navegación */
+        align-items: center;
+        gap: 10px;
     }
 
     .botonera_nav {
-        display: flex;
+        /* Hacemos que la botonera también se apile verticalmente */
         flex-direction: column;
+        width: 100%;
         align-items: center;
-        gap: 10px;
     }
 
     .boton_html {
-        font-size: 1rem;
-        padding: 8px 16px;
+        /* Botones de navegación ocupan el ancho completo para facilitar el toque */
+        width: 90%;
+        text-align: center;
+        padding: 10px;
     }
 
+    /*sección arriba*/
     .cont_contacto {
-        width: 85%;
-        margin: 10px auto;
+        width: 70%;
+        margin: auto;
         text-align: center;
-        gap: 5px;
     }
 
     .cont_contacto p {
-        font-size: 1rem;
-        line-height: 25px;
+        font-size: 1.1rem;
+        line-height: 30px;
     }
 
+    .cont_contacto h2 {
+        font-size: 2.9rem;
+        margin: 10px;
+    }
 
     .contenedor_arriba {
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 10px;
+        gap: 30px;
+    }
+
+    /*formulario*/
+    .formulario {
+        width: 90%;
+        max-width: none;
         margin: 0 auto;
-        gap: 50px;
-
-        width: 70%;
     }
 
-    .contenedor_form form {
-        width: 80%;
-        padding: 20px 20px;
-        border-radius: 20px;
-        gap: 10px;
+    .formulario form {
+        padding: 20px;
     }
 
-    .flex_identidad {
-        display: flex;
+    #nombre-apellido {
+
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
-    input,
-    textarea {
-        font-size: 0.9rem;
-        padding: 9px;
-
-    }
-
-    textarea {
+    .formulario textarea {
+        padding: 20px;
+        height: 100px;
         border-radius: 20px;
     }
 
     #boton_enviar {
-        width: 40%;
-        padding: 7px;
-        font-size: 0.9rem;
+        width: 60%;
+        padding: 15px;
     }
 
+    /*datos de contacto*/
     .info_contacto {
-        font-size: 0.9rem;
-        line-height: 35px;
-    }
-
-    .flex_li {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+        font-size: 1rem;
+        line-height: 40px;
+        padding-left: 0;
+        text-align: left;
+        margin-left: 10px;
     }
 
     .flex_li img {
@@ -938,66 +1142,67 @@ form {
         height: auto;
     }
 
+    .flex_li {
+        align-items: center;
+        gap: 10px;
+    }
+
+    /*suscribite*/
     .cont_suscribite {
-        width: 70%;
-        padding: 20px;
-        border-radius: 25px;
-        box-shadow: none;
+        width: 80%;
+        padding: 25px 15px;
+        border-radius: 40px;
     }
 
     .cont_suscribite h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .cont_suscribite p {
-        font-size: 0.9rem;
-        line-height: 25px;
-        margin: 0px;
+        font-size: 1rem;
     }
 
     .form_suscripcion {
         flex-direction: column;
-        align-items: center;
-        gap: 5px;
+        gap: 10px;
         width: 90%;
+        overflow: visible;
     }
 
     .form_suscripcion input[type="email"] {
-        border-radius: 30px;
-        width: 90%;
-        margin: 5px;
-        font-size: 0.9rem;
+        border-radius: 20px;
+        text-align: center;
     }
 
     #boton_sus {
-        border-radius: 30px;
-        font-size: 0.8rem;
+        border-radius: 40px;
+        padding: 15px 20px;
+        width: 50%;
+        margin: auto;
     }
 
+    /* FOOTER */
     .caja_footer {
-        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .caja_footer img {
+        width: 100%;
         height: auto;
     }
 
     .flex_footer p {
-        position: static;
-        text-align: center;
-        font-size: 0.9rem;
-        padding-top: 8px;
+        font-size: 1rem;
+        padding: 10px 0;
     }
 
     #footer_redes {
-        position: static;
         justify-content: center;
-        gap: 40px;
-        margin: 20px 0;
     }
 
-    #footer_redes img {
-        width: 35px;
-        height: 35px;
+    #footer_redes a img {
+        width: 20px;
+        height: auto;
     }
 }
