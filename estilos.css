@@ -334,6 +334,49 @@ input[type="radio"] {
     text-align: center;
 }
 
+.cont_img {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+#img1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+    width: 465px;
+    height: 620px;
+}
+
+#img2 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 3;
+    width: 635px;
+    height: 695px;
+}
+
+#img3 {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    z-index: 2;
+    width: 509px;
+    height: 407px;
+}
+
+.cont_img img:hover {
+    transform: translateY(-10px) scale(1.03);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+    /* se pone al frente mientras se hace hover */
+}
+
 .cont_actindex p {
     font-size: 1.8rem;
     max-width: 600px;
@@ -357,6 +400,10 @@ input[type="radio"] {
 }
 
 /*LA RESERVA*/
+#actividades h1 {
+    font-size: 4.1rem;
+    top: 300px;
+}
 
 .subtitulo-reserva h2 {
     color: var(--color_terracota);
@@ -387,6 +434,27 @@ input[type="radio"] {
 .contenedor2 {
   margin: 0 auto;
   padding: 60px 95px;
+}
+/*ACTIVIDADES*/
+.margen_izq, .margen_der {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin: 90px;
+}
+
+.margen_izq h3, 
+.margen_der h3 {
+    color: var(--color_terracota);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.margen_izq article, .margen_der article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .bloque {
