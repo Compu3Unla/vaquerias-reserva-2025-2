@@ -33,49 +33,7 @@ ul {
     --color_terracota: #bc6c25;
 }
 
-/*cuerpos tipográficos*/
-h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 5px 7px 3px var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 4.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 10px 60px;
-}
-
-h2 {
-    color: var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 0;
-}
-
-h3 {
-    color: white;
-    font-family: "Montserrat";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    margin: 15px;
-}
-
-p {
-    color: var(--color_verde);
-    font-family: "Montserrat";
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 0;
-}
-
-/*NAVEGADOR*/
+/*navegadores para los html*/
 nav {
     display: flex;
     align-items: end;
@@ -122,7 +80,7 @@ nav {
     transform: scale(1.5);
 }
 
-/*HEADER*/
+/*header para los html*/
 .contenedor_header {
     position: relative;
     width: 100%;
@@ -153,7 +111,7 @@ nav {
     width: 90%;
 }
 
-/*FOOTER*/
+/*footer para los html*/
 .caja_footer {
     position: relative;
     width: 100%;
@@ -199,10 +157,51 @@ nav {
     width: 71px;
 }
 
+/*cuerpos tipográficos para los html*/
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 5px 7px 3px var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 60px;
+}
+
+h2 {
+    color: var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    margin: 15px;
+}
+
+p {
+    color: var(--color_verde);
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+
 
 /*INDEX*/
-
-/*header*/
 #header_index h1 {
     text-align: left;
     font-size: 7rem;
@@ -380,7 +379,6 @@ input[type="radio"] {
 .cont_actindex p {
     font-size: 1.8rem;
     max-width: 600px;
-
 }
 
 #boton_index {
@@ -867,12 +865,8 @@ p .subtitulo-flora {
 }
 
 /*MEDIA RESPONSIVE*/
-/*
-====================================
-  MEDIA QUERY para MÓVILES (max-width: 500px)
-  Ajustes para la sección LA RESERVA
-====================================
-*/
+
+/*media responsive para lareserva.html*/
 @media only screen and (max-width: 500px) {
 
     html,
