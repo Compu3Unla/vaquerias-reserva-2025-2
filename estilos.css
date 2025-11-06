@@ -698,24 +698,33 @@ p .subtitulo-flora {
 
 #como_llegar{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    margin: 20px;
 }
 .icon_como_llegar {
     display: flex;
-    width: 60%;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     gap: 25px;
+}
+
+.text_como_llegar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .art_como_llegar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 41%;
+    gap: 20px;
 }
 
 .foto_mapa{
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 /* CONTACTO */
