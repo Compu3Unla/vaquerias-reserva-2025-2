@@ -730,29 +730,34 @@ p .subtitulo-flora {
     gap: 50px;
 
 }
+
 /*formulario*/
 .formulario {
-	background: var(--color_oliva);
-	color: white;
-	font-size: 1.2rem;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	flex: 1;
-	border-radius: 30px;
+    background: var(--color_oliva);
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    flex: 1;
+    border-radius: 30px;
     max-width: 800px;
     margin-left: 90px;
 }
+
 .formulario form {
-	padding: 30px;
-	gap: 24px;
-	display: flex;
-	flex-direction: column;
+    padding: 30px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
 }
-.formulario input, .formulario textarea {
-	border: 0;
-	border-radius: 40px;
-	min-height: 40px;
+
+.formulario input,
+.formulario textarea {
+    border: 0;
+    border-radius: 40px;
+    min-height: 40px;
 }
+
 .formulario textarea {
     padding: 65px;
     resize: vertical;
@@ -760,26 +765,27 @@ p .subtitulo-flora {
 }
 
 .formu_flex {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
     font-family: "Montserrat", sans-serif;
 }
+
 #nombre-apellido {
-	display: flex;
-	gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 #boton_enviar {
-	border: none;
-	border-radius: 30px;
-	background-color: var(--color_verde);
-	padding: 12px;
-	font-size: 1rem;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color_verde);
+    padding: 12px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
     margin: auto;
     width: 40%;
     cursor: pointer;
@@ -787,7 +793,7 @@ p .subtitulo-flora {
 }
 
 #boton_enviar:hover {
-	background-color: var(--color_terracota)
+    background-color: var(--color_terracota)
 }
 
 /*datos de contacto*/
@@ -819,39 +825,40 @@ p .subtitulo-flora {
     box-shadow: 20px 15px 30px 0 var(--color_oliva);
 }
 
-.cont_suscribite p { 
+.cont_suscribite p {
     color: white;
     line-height: 35px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .form_suscripcion {
-    display: flex; 
-    border-radius: 60px; 
-    overflow: hidden; 
-    width: 100%; 
+    display: flex;
+    border-radius: 60px;
+    overflow: hidden;
+    width: 100%;
     max-width: 450px;
     margin: 0 auto;
 }
 
 
 .form_suscripcion input[type="email"] {
-    flex-grow: 1; 
+    flex-grow: 1;
     padding: 12px 15px;
     border: none;
-    border-radius: 10px 0 0 10px; 
+    border-radius: 10px 0 0 10px;
     font-size: 0.9rem;
 }
 
 #boton_sus {
-    background-color: var(--color_oliva); 
+    background-color: var(--color_oliva);
     color: white;
     padding: 12px 20px;
     font-weight: 600;
     border: none;
     cursor: pointer;
     font-size: 0.9rem;
-    border-radius: 0 8px 8px 0; 
+    border-radius: 0 8px 8px 0;
     transition: background-color 0.3s ease-in;
 }
 
@@ -860,13 +867,17 @@ p .subtitulo-flora {
 }
 
 /*MEDIA RESPONSIVE*/
-
-/*media responsive contacto.html*/
-@media (max-width: 500px) {
+/*
+====================================
+  MEDIA QUERY para MÓVILES (max-width: 500px)
+  Ajustes para la sección LA RESERVA
+====================================
+*/
+@media only screen and (max-width: 500px) {
 
     html,
     body {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
     /* header */
@@ -876,14 +887,170 @@ p .subtitulo-flora {
     }
 
     .contenedor_header h1 {
-        font-size: 1.3rem; 
-        padding: 0 15px; 
+        font-size: 3.2rem;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .subtitulo-reserva h2{
+        font-size: 2.9rem;
+}
+    .subtitulo-reserva h2,
+    .subtitulo-reserva p {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    /*video*/
+    .video-reserva {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .video-reserva video {
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+
+    }
+
+    /*contenedor 2*/
+    .contenedor2 {
+        padding: 30px 20px;
+    }
+
+    .bloque {
+        flex-direction: column;
+    }
+
+    .texto-reserva h2 {
+        font-size: 2rem;
+        /* Reducimos el tamaño del título */
+        text-align: center;
+    }
+
+    .texto-reserva p {
+        font-size: 1rem;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    .imagen-reserva img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /*fauna*/
+    .nuestra-fauna {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px;
+        gap: 40px;
+    }
+
+    .fauna-reserva {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .fauna-reserva h2 {
+        font-size: 1.8rem;
+    }
+
+    .img-container:hover {
+        transform: translateY(-5px) scale(1.03);
+    }
+
+    .img-container:hover img {
+        transform: scale(1.03);
+    }
+
+    /*sección aves*/
+    .seccion-aves {
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .texto-aves {
+        width: 100%;
+        /* Ocupa todo el ancho */
+    }
+
+   .aves img {
+        width: 80%;
+
+        height: auto;
+    }
+
+    /* Ajuste de tipografía de números y especies */
+    h2 .italic {
+        font-size:2.7rem;
+    }
+    p .numeros,
+    p .grande {
+        font-size: 3rem;
+    }
+
+    /* sección flora*/
+    .flora2 {
+        /* Apilamos y ajustamos el margen */
+        display: flex;
+        flex-direction: column-reverse;
+        /* Imagen abajo, contenido arriba */
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .contenido-flora {
+
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-left: 0;
+        text-align: left;
+        padding-bottom: 30px;
+
+    }
+
+    p .subtitulo-flora {
+        font-size: 1.2rem;
+    }
+
+    .imagen-contenido img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/*media responsive contacto.html*/
+@media (max-width: 500px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* header */
+    .contenedor_header img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor_header h1 {
+        font-size: 3.2rem;
+        padding: 0 15px;
         text-align: center;
     }
 
     /* Navegación*/
     nav {
-        flex-direction: column; /* Apilamos los elementos de navegación */
+        flex-direction: column;
+        /* Apilamos los elementos de navegación */
         align-items: center;
         gap: 10px;
     }
@@ -894,7 +1061,7 @@ p .subtitulo-flora {
         width: 100%;
         align-items: center;
     }
-    
+
     .boton_html {
         /* Botones de navegación ocupan el ancho completo para facilitar el toque */
         width: 90%;
@@ -904,40 +1071,40 @@ p .subtitulo-flora {
 
     /*sección arriba*/
     .cont_contacto {
-        width: 70%; 
+        width: 70%;
         margin: auto;
         text-align: center;
     }
 
-    .cont_contacto p  {
-        font-size: 1.1rem; 
+    .cont_contacto p {
+        font-size: 1.1rem;
         line-height: 30px;
     }
 
-     .cont_contacto h2  {
-        font-size: 2.9rem; 
+    .cont_contacto h2 {
+        font-size: 2.9rem;
         margin: 10px;
     }
-    
+
     .contenedor_arriba {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-        margin: 0; 
+        margin: 0;
         padding: 0 10px;
-        gap: 30px; 
+        gap: 30px;
     }
 
     /*formulario*/
     .formulario {
-        width: 90%; 
-        max-width: none; 
-        margin: 0 auto; 
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
     }
-    
+
     .formulario form {
-        padding: 20px; 
+        padding: 20px;
     }
-    
+
     #nombre-apellido {
 
         flex-direction: column;
@@ -951,15 +1118,15 @@ p .subtitulo-flora {
     }
 
     #boton_enviar {
-        width: 60%; 
+        width: 60%;
         padding: 15px;
     }
 
     /*datos de contacto*/
     .info_contacto {
-        font-size: 1rem; 
+        font-size: 1rem;
         line-height: 40px;
-        padding-left: 0; 
+        padding-left: 0;
         text-align: left;
         margin-left: 10px;
     }
@@ -968,6 +1135,7 @@ p .subtitulo-flora {
         width: 20px;
         height: auto;
     }
+
     .flex_li {
         align-items: center;
         gap: 10px;
@@ -975,12 +1143,12 @@ p .subtitulo-flora {
 
     /*suscribite*/
     .cont_suscribite {
-        width: 80%; 
+        width: 80%;
         padding: 25px 15px;
-        border-radius: 40px; 
+        border-radius: 40px;
     }
 
-    .cont_suscribite h3{
+    .cont_suscribite h3 {
         font-size: 1.4rem;
     }
 
@@ -989,14 +1157,14 @@ p .subtitulo-flora {
     }
 
     .form_suscripcion {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 10px;
         width: 90%;
         overflow: visible;
     }
 
     .form_suscripcion input[type="email"] {
-       border-radius: 20px;
+        border-radius: 20px;
         text-align: center;
     }
 
@@ -1012,22 +1180,23 @@ p .subtitulo-flora {
         display: flex;
         justify-content: space-between;
     }
+
     .caja_footer img {
         width: 100%;
         height: auto;
     }
 
     .flex_footer p {
-        font-size:1rem;
+        font-size: 1rem;
         padding: 10px 0;
     }
-    
+
     #footer_redes {
-        justify-content: center; 
+        justify-content: center;
     }
-    
+
     #footer_redes a img {
-        width: 20px; 
+        width: 20px;
         height: auto;
     }
 }
