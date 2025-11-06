@@ -42,24 +42,37 @@
         <!--Sección central-->
         <section class="contenedor_arriba">
             <!--Formulario-->
-            <article class="contenedor_form">
+            <div class="formulario">
                 <form method="post" action="mailto:?subject=email enviado desde el formulario" target="_blank"
                     enctype="text/plain">
-                    <div class="flex_identidad">
-                        <input type="text" name="nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+                    <div id="nombre-apellido">
+                        <div class="formu_flex">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" maxlength="30" required>
+                        </div>
 
-                        <input type="text" name="Apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
+                        <div class="formu_flex">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" maxlength="30" required>
+                        </div>
                     </div>
 
-                    <input type="text" name="Asunto" id="asunto" placeholder="Asunto" maxlength="30" required>
-
-                    <input type="email" name="Email" id="email_contacto" placeholder="usuario@mail.com" required>
-
-                    <textarea name="Mensaje" id="mensaje" placeholder="Escribí tu mensaje aquí" required></textarea>
-
+                    <div class="formu_flex">
+                        <label for="correo">Asunto</label>
+                        <input type="asunto" id="asunto" name="asunto" required maxlength="40">
+                    </div>
+                    <div class="formu_flex">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" name="email" id="email_contacto" required>
+                    </div>
+                    <div class="formu_flex">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" required></textarea>
+                    </div>
                     <input type="submit" id="boton_enviar" value="ENVIAR">
                 </form>
-            </article>
+            </div>
+
 
             <!--Datos de contacto-->
             <article>
@@ -98,8 +111,6 @@
                 <input type="submit" id="boton_sus" value="SUSCRIBIRSE">
             </form>
         </section>
-
-        <aside></aside>
     </main>
 
     <!--FOOTER-->
@@ -126,4 +137,3 @@
 </body>
 
 </html>
-</body>
