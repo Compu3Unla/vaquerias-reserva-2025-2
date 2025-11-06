@@ -99,7 +99,8 @@ nav {
     z-index: 1;
     top: 200px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(35%);
+    width: 890px;
 }
 
 .contenedor_header nav {
@@ -199,12 +200,16 @@ p {
     margin-top: 0;
 }
 
-
-
 /*INDEX*/
 #header_index h1 {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-95%) translateY(10%);
+    width: 855px;
     text-align: left;
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 /*sección slider*/
@@ -398,11 +403,6 @@ input[type="radio"] {
 }
 
 /*LA RESERVA*/
-#actividades h1 {
-    font-size: 4.1rem;
-    top: 300px;
-}
-
 .subtitulo-reserva h2 {
     color: var(--color_terracota);
     margin-left: 95px;
@@ -695,17 +695,29 @@ p .subtitulo-flora {
 }
 
 /*COMO LLEGAR*/
-.auto_como_llegar {
+
+#como_llegar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon_como_llegar {
     display: flex;
     width: 60%;
     align-items: center;
     gap: 25px;
 }
 
+.art_como_llegar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* CONTACTO */
 /*sección arriba*/
 .cont_contacto {
-    margin-left: 45px;
+    margin-left: 95px;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -713,19 +725,21 @@ p .subtitulo-flora {
 
 .cont_contacto p {
     color: var(--color_verde);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-style: italic;
-    line-height: 40px;
+    font-weight: 400;
+    line-height: 1.5;
     font-weight: 500;
+    width: 646px;
 }
 
 /*sección central*/
 .contenedor_arriba {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-evenly;
     margin-left: 80px;
-    gap: 50px;
+    margin-top: 50px;
 
 }
 
@@ -820,7 +834,7 @@ p .subtitulo-flora {
     border-radius: 60px;
     padding: 35px;
     margin: 40px auto;
-    box-shadow: 20px 15px 30px 0 var(--color_oliva);
+    box-shadow: 8px 12px 13px 0 var(--color_oliva);
 }
 
 .cont_suscribite p {
