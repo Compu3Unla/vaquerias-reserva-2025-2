@@ -743,6 +743,7 @@ p .subtitulo-flora {
 .fauna h2 {
     color: var(--color_fondo);
     position: relative;
+    margin-left: 95px;
 }
 
 .flora {
@@ -754,7 +755,7 @@ p .subtitulo-flora {
 
 .flora h2 {
     color: var(--color_terracota);
-
+    margin-left: 95px;
 }
 
 .galeria {
@@ -1332,7 +1333,7 @@ p .subtitulo-flora {
     }
 }
 
-/* Versión responsive de como llegar (500px) */
+/* Versión responsive de COMO LLEGAR (500px) */
 
 @media (max-width: 500px) {
 
@@ -1361,16 +1362,15 @@ p .subtitulo-flora {
         display: flex;
         max-width: 90%;
         gap: 15px;
+        justify-content: center;
 
     }
 
     .icon_como_llegar {
         
         display: flex;
-        flex-direction: row; 
-        justify-content: space-evenly;
-        gap: 10px; 
-        margin-bottom: 15px;
+        flex-direction: column; 
+        gap: 55px; 
     }
 
     .icon_como_llegar img {
@@ -1424,3 +1424,5 @@ p .subtitulo-flora {
         height: 300px; 
     }
 }
+
+/*Versión responsive de La Reserva en pantallas 1366*/
