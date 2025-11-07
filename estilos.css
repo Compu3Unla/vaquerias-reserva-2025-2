@@ -309,84 +309,118 @@ input[type="radio"] {
 }
 
 /*seccion aventuras*/
-.cont_actindex {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.aventura-index {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 60px 48px;
+    padding-top: 160px;
+
+    background-image: url(img/index/img_section2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.cont_actindex img {
-    width: 100%;
-    height: auto;
+/*formas individuales*/
+.formas {
     position: relative;
-    z-index: 1;
+    flex: 1;
+    max-width: 650px;
+    min-width: 350px;
+    height: 710px;
 }
 
-.cont_actindex h2 {
+.forma {
     position: absolute;
-    top: 25%;
-    z-index: 2;
-    color: var(--color_verde);
-    font-size: 2.5rem;
-    text-align: center;
-    width: 90%;
+    transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
-.cont_actindex div {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-}
-
-.cont_img {
-    position: relative;
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
-}
-
-
-#img1 {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 1;
+/*utilizamos estas etiquetas para que le quite el el marco a los png, ya que los id/class no aceptan y no toman el efecto que queremos en los png tal como estan*/
+.verde {
+    background-color: #4b5330;
+    -webkit-mask-image: url("img/index/actividades-index/forma1imagen.png");
+    mask-image: url("img/index/actividades-index/forma1imagen.png");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     width: 465px;
     height: 620px;
+    top: 60px;
+    left: -95px;
+    z-index: 1;
 }
 
-#img2 {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    z-index: 3;
+.naranja {
+    background-color: #b15e2b;
+    -webkit-mask-image: url("img/index/actividades-index/forma2imagen.png");
+    mask-image: url("img/index/actividades-index/forma2imagen.png");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     width: 635px;
     height: 695px;
+    top: 0px;
+    left: 300px;
+    z-index: 2;
 }
 
-#img3 {
-    position: absolute;
-    top: 200px;
-    left: 350px;
-    z-index: 2;
+.oliva {
+    background-color: #7a6c4d;
+    -webkit-mask-image: url("img/index/actividades-index/forma3imagen.png");
+    mask-image: url("img/index/actividades-index/forma3imagen.png");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     width: 509px;
     height: 407px;
+    top: 380px;
+    left: 160px;
+    z-index: 3;
 }
 
-.cont_img img:hover {
-    transform: translateY(-10px) scale(1.03);
-    filter: brightness(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+/*hover que muestra la imagen*/
+.forma:hover {
+    transform: scale(1.05);
     z-index: 4;
-    /* se pone al frente mientras se hace hover */
 }
 
-.cont_actindex p {
-    font-size: 1.8rem;
-    max-width: 600px;
+.forma img {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.forma:hover img {
+    opacity: 1;
+}
+
+/*texto a la derecha */
+.texto-index-act {
+    flex: 1;
+    max-width: 450px;
+}
+
+.texto-index-act h2 {
+    font-size: 2rem;
+    color: var(--color_verde);
+    margin-bottom: 1rem;
+}
+
+.texto-index-act p {
+    font-size: 1.5rem;
+    color: #3c3c1f;
+    line-height: 1.5;
 }
 
 #boton_index {
+    margin-top: 1.5rem;
+}
+
+#boton_index a {
     padding: 10px 20px;
     background-color: var(--color_verde);
     color: white;
@@ -398,7 +432,7 @@ input[type="radio"] {
     transition: background-color 0.3s ease;
 }
 
-#boton_index:hover {
+#boton_index:hover a {
     background-color: var(--color_terracota);
 }
 
@@ -1296,4 +1330,101 @@ p .subtitulo-flora {
         width: 20px;
         height: auto;
     }
+}
+
+/* Versión responsive de como llegar (500px) */
+
+@media (max-width: 500px) {
+
+    /* --- ESTILOS DE LA SECCIÓN 'CÓMO LLEGAR' --- */
+
+    #formas_de_llegar {
+        /* Eliminar el margen lateral excesivo y centrar si es necesario */
+        margin-left: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #como_llegar {
+        /* Deshacer el flexbox horizontal para apilar la imagen y el texto */
+        display: flex;
+        flex-direction: column; /* Apilamiento vertical */
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0; /* Reducir margen */
+    }
+
+    .foto_mapa {
+        /* La imagen del mapa debe ocupar casi todo el ancho */
+        width: 90%;
+        height: auto;
+        border-radius: 15px; /* Ajustar el radio si se desea */
+        margin-bottom: 20px;
+    }
+
+    .art_como_llegar {
+        /* El contenedor de los íconos y el texto ahora ocupa todo el ancho */
+        display: block; /* Ocupa el 100% del ancho disponible */
+        max-width: 90%; /* Ajuste al 90% del contenedor padre */
+        gap: 0;
+    }
+
+    .icon_como_llegar {
+        /* Los íconos deben apilarse o centrarse mejor para móviles */
+        display: flex;
+        flex-direction: row; /* Mantenerlos en fila, pero más juntos */
+        justify-content: space-evenly;
+        gap: 10px; /* Reducir el espacio entre íconos */
+        margin-bottom: 15px;
+    }
+
+    .icon_como_llegar img {
+        /* Asegurar que los íconos no sean demasiado grandes */
+        width: 40px;
+        height: auto;
+    }
+
+    .text_como_llegar {
+        /* El texto debe apilarse verticalmente (el comportamiento por defecto de <p>) */
+        display: block;
+        text-align: center;
+    }
+
+    .text_como_llegar p {
+        /* Asegurar legibilidad */
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    /* --- SECCIÓN DEL IFRAME (MAPA Y HORARIOS) --- */
+
+    .mapa_iframe {
+        /* Ya está en columna, solo ajustamos el padding */
+        padding: 15px 10px;
+    }
+
+    .text_horarios {
+        /* Ajustar el tamaño del texto y el alineamiento */
+        display: block; /* Apilar el ícono y el texto si es necesario */
+        text-align: center;
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+        margin-bottom: 15px;
+    }
+    
+    .text_horarios img {
+        /* Asegurar que el ícono esté centrado si se usa 'display: block' en el padre */
+        display: block;
+        margin: 0 auto 5px;
+        width: 40px; /* Reducir el tamaño del ícono */
+        height: auto;
+    }
+
+    .mapa_iframe iframe {
+        /* El iframe debe ser 100% ancho y tener una altura cómoda para móviles */
+        width: 95%;
+        height: 300px; /* Altura fija adecuada para móviles */
+    }
+
+    /* (Nota: Las adaptaciones del HEADER y FOOTER están en la respuesta anterior
+    y son necesarias para el diseño completo.) */
 }
