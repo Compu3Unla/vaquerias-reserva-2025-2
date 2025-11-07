@@ -65,13 +65,6 @@ nav {
     color: white;
 }
 
-.menu-icon {
-    display: none;
-}
-
-#menu-toggle {
-    display: none;
-}
 /*animacion del nav*/
 .boton_html,
 .boton_index {
@@ -982,7 +975,7 @@ p .subtitulo-flora {
 
 /*MEDIA RESPONSIVE*/
 
-/*media responsive para lareserva.html*/
+/*media responsive lareserva.html*/
 @media screen and (max-width: 500px) {
 
     html,
@@ -990,152 +983,146 @@ p .subtitulo-flora {
         overflow-x: hidden;
     }
 
-    /* header */
-    .contenedor_header img {
-        width: 100%;
-        height: auto;
-    }
-
-    .contenedor_header h1 {
-        font-size: 3.2rem;
-        padding: 0 15px;
-        text-align: center;
-    }
-
-    .subtitulo-reserva h2{
-        font-size: 2.9rem;
-}
+    /* Subtítulo de la reserva */
     .subtitulo-reserva h2,
     .subtitulo-reserva p {
-        margin: 10px 20px;
+        margin-left: 15px;
         text-align: center;
     }
 
-    /*video*/
+    .subtitulo-reserva h2 {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo-reserva p {
+        font-size: 1rem;
+    }
+
+    /* Video principal */
     .video-reserva {
+        width: 85%;
         height: auto;
-        padding: 20px 0;
+        margin: 0 auto;
     }
 
     .video-reserva video {
-        width: 90%;
+        width: 100%;
         height: auto;
-        border-radius: 15px;
-
+        border: solid 5px var(--color_verde);
+        border-radius: 20px;
     }
 
-    /*contenedor 2*/
+    /* Contenedor de los textos e imágenes */
     .contenedor2 {
-        padding: 30px 20px;
+        padding: 30px 15px;
     }
 
     .bloque {
         flex-direction: column;
+        gap: 25px;
+        margin-bottom: 40px;
     }
 
     .texto-reserva h2 {
-        font-size: 2rem;
-        /* Reducimos el tamaño del título */
+        font-size: 1.4rem;
         text-align: center;
     }
 
     .texto-reserva p {
-        font-size: 1rem;
-        margin-left: 25px;
-        margin-right: 25px;
         text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .imagen-reserva {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .imagen-reserva img {
         width: 100%;
         height: auto;
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
-    /*fauna*/
+    /* Fauna */
     .nuestra-fauna {
         flex-direction: column;
         align-items: center;
-        margin: 30px 20px;
-        gap: 40px;
     }
 
     .fauna-reserva {
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
     }
 
     .fauna-reserva h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    .img-container:hover {
-        transform: translateY(-5px) scale(1.03);
+    .img-container img {
+        width: 100%;
+        height: auto;
     }
 
-    .img-container:hover img {
-        transform: scale(1.03);
-    }
-
-    /*sección aves*/
+    /* Sección de aves */
     .seccion-aves {
         flex-direction: column;
-        gap: 30px;
-        margin: auto;
+        gap: 25px;
+        margin: 40px;
         text-align: center;
     }
 
     .texto-aves {
         width: 100%;
-        /* Ocupa todo el ancho */
+        
     }
 
-   .aves img {
-        width: 80%;
-
-        height: auto;
-    }
-
-    /* Ajuste de tipografía de números y especies */
     h2 .italic {
-        font-size:2.7rem;
+        font-size: 2.5rem;
     }
+
     p .numeros,
     p .grande {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
-    /* sección flora*/
+    /* Flora */
     .flora2 {
-        /* Apilamos y ajustamos el margen */
-        display: flex;
-        flex-direction: column-reverse;
-        /* Imagen abajo, contenido arriba */
-        margin: 0 20px;
-        position: relative;
+        margin: 0 15px;
+        background-color: var(--color_verde);
+        border-radius: 20px;
+        
     }
 
     .contenido-flora {
-
         position: static;
-        width: 100%;
+        width: 90%;
+        padding: 20px 0 10px;
+        margin: 0 auto;
         transform: none;
-        margin-left: 0;
-        text-align: left;
-        padding-bottom: 30px;
-
-    }
-
-    p .subtitulo-flora {
-        font-size: 1.2rem;
+        text-align: center;
+        
     }
 
     .imagen-contenido img {
         width: 100%;
         height: auto;
         margin-bottom: 30px;
+        border: none;
+    }
+
+    .contenido-flora h2 {
+        font-size: 1.6rem;
+        
+    }
+
+    p .subtitulo-flora {
+        font-size: 1.4rem;
+        text-align: center;
+
     }
 }
+    
 
 /*media responsive contacto.html*/
 @media (max-width: 500px) {
