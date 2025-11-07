@@ -1496,6 +1496,8 @@ p .subtitulo-flora {
 }
 
 
+/*MEDIA PARA PANTALLAS DE 1366 EN LA PESTAÑA DE LA RESERVA*/
+
 @media (max-width: 1366px) {
     .subtitulo-reserva h2 {
         margin-left: 60px;
