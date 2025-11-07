@@ -568,6 +568,67 @@ p .subtitulo-flora {
     margin-left: 50px;
 }
 
+/*redireccion a otro html*/
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+/* Texto */
+.texto-reserva {
+    flex: 1;
+    max-width: 700px;
+}
+
+.imagen-reserva {
+    position: relative;
+    width: 750px;
+    height: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imagen-reserva img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+.imagen-reserva:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color_terracota);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 20px;
+}
+
+.ver-mas {
+     color: white;
+     font-family: "Montserrat", sans-serif;
+     font-size: 2rem;
+     font-weight: 600;
+}
+
+.imagen-reserva:hover .overlay {
+    opacity: 0.8;
+}
+
 /*ACTIVIDADES*/
 
 .margen_izq {
