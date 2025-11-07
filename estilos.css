@@ -789,6 +789,12 @@ p .subtitulo-flora {
     border-radius: 25px;
 }
 
+.mapa_iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* CONTACTO */
 /*sección arriba*/
 .cont_contacto {
