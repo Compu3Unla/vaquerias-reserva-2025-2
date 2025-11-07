@@ -1,6 +1,9 @@
 Tamaño de pantalla: 1920x1080
+
 Editor de código: Visual Studio Code
+
 Link de maqueta de figma:
+
 https://www.figma.com/design/LlK37jmctqphzhRKO2cPBY/Presentaci%C3%B3n-Grupo-6?node-id=4-3&t=Po5ElpUOzyHTux6Q-1
 
 ----
