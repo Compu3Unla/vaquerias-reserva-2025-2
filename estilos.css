@@ -804,6 +804,10 @@ p .subtitulo-flora {
     color: #3f4021;
 }
 
+.art_como_llegar h2{
+    display: flex;
+}
+
 /* CONTACTO */
 /*sección arriba*/
 .cont_contacto {
