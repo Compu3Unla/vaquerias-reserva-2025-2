@@ -1302,62 +1302,60 @@ p .subtitulo-flora {
 
 @media (max-width: 500px) {
 
-    /* --- ESTILOS DE LA SECCIÓN 'CÓMO LLEGAR' --- */
-
     #formas_de_llegar {
-        /* Eliminar el margen lateral excesivo y centrar si es necesario */
         margin-left: 0;
         text-align: center;
         padding-top: 20px;
     }
 
     #como_llegar {
-        /* Deshacer el flexbox horizontal para apilar la imagen y el texto */
         display: flex;
-        flex-direction: column; /* Apilamiento vertical */
+        flex-direction: column; 
         justify-content: center;
         align-items: center;
-        margin: 15px 0; /* Reducir margen */
+        margin: 15px 0; 
     }
 
     .foto_mapa {
-        /* La imagen del mapa debe ocupar casi todo el ancho */
         width: 90%;
         height: auto;
-        border-radius: 15px; /* Ajustar el radio si se desea */
+        border-radius: 15px; 
         margin-bottom: 20px;
     }
 
     .art_como_llegar {
-        /* El contenedor de los íconos y el texto ahora ocupa todo el ancho */
-        display: block; /* Ocupa el 100% del ancho disponible */
-        max-width: 90%; /* Ajuste al 90% del contenedor padre */
-        gap: 0;
+        display: flex;
+        max-width: 90%;
+        gap: 15px;
+
     }
 
     .icon_como_llegar {
-        /* Los íconos deben apilarse o centrarse mejor para móviles */
+        
         display: flex;
-        flex-direction: row; /* Mantenerlos en fila, pero más juntos */
+        flex-direction: row; 
         justify-content: space-evenly;
-        gap: 10px; /* Reducir el espacio entre íconos */
+        gap: 10px; 
         margin-bottom: 15px;
     }
 
     .icon_como_llegar img {
-        /* Asegurar que los íconos no sean demasiado grandes */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 15px;
         width: 40px;
         height: auto;
     }
 
     .text_como_llegar {
-        /* El texto debe apilarse verticalmente (el comportamiento por defecto de <p>) */
         display: block;
-        text-align: center;
+        text-align: start;
+        width: 80%;
     }
 
     .text_como_llegar p {
-        /* Asegurar legibilidad */
+        
         font-size: 1em;
         margin-bottom: 15px;
     }
@@ -1365,32 +1363,30 @@ p .subtitulo-flora {
     /* --- SECCIÓN DEL IFRAME (MAPA Y HORARIOS) --- */
 
     .mapa_iframe {
-        /* Ya está en columna, solo ajustamos el padding */
+        
         padding: 15px 10px;
     }
 
     .text_horarios {
-        /* Ajustar el tamaño del texto y el alineamiento */
-        display: block; /* Apilar el ícono y el texto si es necesario */
+        
+        display: flex; 
+        gap: 15px;
         text-align: center;
-        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+        font-size: 1rem; 
         margin-bottom: 15px;
     }
     
     .text_horarios img {
-        /* Asegurar que el ícono esté centrado si se usa 'display: block' en el padre */
+        
         display: block;
         margin: 0 auto 5px;
-        width: 40px; /* Reducir el tamaño del ícono */
+        width: 40px; 
         height: auto;
     }
 
     .mapa_iframe iframe {
-        /* El iframe debe ser 100% ancho y tener una altura cómoda para móviles */
+        
         width: 95%;
-        height: 300px; /* Altura fija adecuada para móviles */
+        height: 300px; 
     }
-
-    /* (Nota: Las adaptaciones del HEADER y FOOTER están en la respuesta anterior
-    y son necesarias para el diseño completo.) */
 }
