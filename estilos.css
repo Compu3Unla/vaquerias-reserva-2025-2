@@ -66,6 +66,11 @@ nav {
 }
 
 /*animacion del nav*/
+.boton_index img {
+    width: 69px;
+    height: 53px;
+}
+
 .boton_html,
 .boton_index {
     position: relative;
@@ -452,7 +457,6 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .video-reserva video {
