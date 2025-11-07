@@ -1376,8 +1376,8 @@ p .subtitulo-flora {
         overflow-x: hidden;
     }
 
-    section,
-    main {
+   
+    section, main {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1393,11 +1393,54 @@ p .subtitulo-flora {
         text-align: center;
     }
 
-    .contenedor_header>img {
+    
+    
+    .contenedor_header > img {
         width: 100%;
         height: auto;
     }
 
+    .contenedor_header h1 {
+        position: relative;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    header nav {
+        
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 0;
+        width: 100%; 
+    }
+
+    .boton_index {
+        margin-bottom: 15px; 
+    }
+
+    .vaq_navanimada {
+        width: 50px;
+        height: auto;
+    }
+
+    .botonera_nav {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .boton_html {
+        display: block;
+        padding: 12px;
+        margin: 4px 0; 
+        font-size: 0.9em; 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+    
+   
     /*main*/
 
     #formas_de_llegar {
