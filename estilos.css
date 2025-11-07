@@ -1362,13 +1362,14 @@ p .subtitulo-flora {
         display: flex;
         max-width: 90%;
         gap: 15px;
+        justify-content: center;
 
     }
 
     .icon_como_llegar {
         
         display: flex;
-        flex-direction: row; 
+        flex-direction: column; 
         justify-content: space-evenly;
         gap: 10px; 
         margin-bottom: 15px;
