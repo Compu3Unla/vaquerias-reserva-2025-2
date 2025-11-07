@@ -1155,6 +1155,35 @@ p .subtitulo-flora {
         text-align: center;
 
     }
+    .caja_footer {
+        background-color: #bc6c25;
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .caja_footer img {
+        width: 100%;
+        height: 150px;
+        bottom: 150px;
+    }
+
+    .flex_footer p {
+        font-size: 01rem;
+        text-align: center;
+    }
+
+    #footer_redes {
+        position: absolute;
+        left: 110px;
+        right: 110px;
+        top: 200px;
+        gap: 110px;
+    }
 }
 
 /*media responsive contacto.html*/
@@ -1306,23 +1335,70 @@ p .subtitulo-flora {
         margin: auto;
     }
 
-    /* --- FOOTER --- */
-
     .caja_footer {
-        height: 150px;
         background-color: #bc6c25;
         display: flex;
+        flex-direction: column;
+        padding: 100px;
         align-items: center;
-        margin-top: 100px;
-        
+        justify-content: center;
+    }
+
+
+
+    .caja_footer img {
+        width: 100%;
+        height: 150px;
+        bottom: 150px;
+    }
+
+    .flex_footer p {
+        font-size: 01rem;
+        text-align: center;
+    }
+
+    #footer_redes {
+        position: absolute;
+        left: 110px;
+        right: 110px;
+        top: 200px;
+        gap: 110px;
     }
 }
 
-    
 
-/* Versión responsive de como llegar (500px) */
-
+/*media cómo llegar*/
 @media (max-width: 500px) {
+
+    /* ESTILOS GENERALES */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section,
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .contenedor_header>img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*main*/
 
     #formas_de_llegar {
         margin-left: 0;
