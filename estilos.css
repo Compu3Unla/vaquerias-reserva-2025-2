@@ -1155,20 +1155,17 @@ p .subtitulo-flora {
     /* Navegación*/
     nav {
         flex-direction: column;
-        /* Apilamos los elementos de navegación */
         align-items: center;
         gap: 10px;
     }
 
     .botonera_nav {
-        /* Hacemos que la botonera también se apile verticalmente */
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
 
     .boton_html {
-        /* Botones de navegación ocupan el ancho completo para facilitar el toque */
         width: 90%;
         text-align: center;
         padding: 10px;
@@ -1283,7 +1280,7 @@ p .subtitulo-flora {
         margin: auto;
     }
 
-    /* FOOTER */
+    /*footer*/
     .caja_footer {
         display: flex;
         justify-content: space-between;
