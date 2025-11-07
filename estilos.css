@@ -65,6 +65,13 @@ nav {
     color: white;
 }
 
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
 /*animacion del nav*/
 .boton_html,
 .boton_index {
@@ -583,6 +590,7 @@ p .subtitulo-flora {
     max-width: 700px;
 }
 
+
 .imagen-reserva {
     position: relative;
     width: 750px;
@@ -626,7 +634,8 @@ p .subtitulo-flora {
 }
 
 .imagen-reserva:hover .overlay {
-    opacity: 0.8;
+    opacity: 0.500
+    ;
 }
 
 /*ACTIVIDADES*/
@@ -766,7 +775,6 @@ p .subtitulo-flora {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     margin: 20px;
 }
 .icon_como_llegar {
@@ -785,7 +793,7 @@ p .subtitulo-flora {
 
 .art_como_llegar{
     display: flex;
-    max-width: 36%;
+    max-width: 41%;
     gap: 20px;
 }
 
@@ -974,13 +982,14 @@ p .subtitulo-flora {
 /*MEDIA RESPONSIVE*/
 
 /*media responsive para lareserva.html*/
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
     html,
     body {
         overflow-x: hidden;
     }
 
+    
     /* header */
     .contenedor_header img {
         width: 100%;
@@ -1129,7 +1138,7 @@ p .subtitulo-flora {
 }
 
 /*media responsive contacto.html*/
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
     html,
     body {
@@ -1148,156 +1157,154 @@ p .subtitulo-flora {
         text-align: center;
     }
 
-    /* Navegación*/
+    /* ====== NAV - MENÚ HAMBURGUESA ====== */
     nav {
-        flex-direction: column;
-        /* Apilamos los elementos de navegación */
+        position: relative;
+        display: flex;
         align-items: center;
-        gap: 10px;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    /* Ícono hamburguesa */
+    .menu-icon {
+        display: block;
+        font-size: 2.5rem;
+        color: var(--color_verde);
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    /* Checkbox oculto */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Botonera oculta por defecto */
+    .botonera_nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color_fondo);
+        border-top: 2px solid var(--color_verde);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    /* Mostrar cuando se activa el ícono */
+    #menu-toggle:checked + .menu-icon + .botonera_nav {
+        display: flex;
+    }
+
+    /* Estilo botones */
+    .boton_html {
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 1rem;
+        border-width: 3px;
+    }
+
+    /* Logo más pequeño */
+    .boton_index img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* ------- resto de tus estilos ------- */
+    .subtitulo-reserva h2 {
+        font-size: 2.9rem;
+    }
+
+    .subtitulo-reserva h2,
+    .subtitulo-reserva p {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    /* ... (tu código sigue igual) ... */
+}
+
+
+/* ======== media responsive contacto.html ======== */
+@media (max-width: 500px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ====== NAV - MENÚ HAMBURGUESA ====== */
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2.5rem;
+        color: var(--color_verde);
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 
     .botonera_nav {
-        /* Hacemos que la botonera también se apile verticalmente */
+        display: none;
         flex-direction: column;
-        width: 100%;
         align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color_fondo);
+        border-top: 2px solid var(--color_verde);
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked + .menu-icon + .botonera_nav {
+        display: flex;
     }
 
     .boton_html {
-        /* Botones de navegación ocupan el ancho completo para facilitar el toque */
-        width: 90%;
+        width: 80%;
         text-align: center;
         padding: 10px;
+        border-radius: 50px;
+        font-size: 1rem;
+        border-width: 3px;
     }
 
-    /*sección arriba*/
+    .boton_index img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* ------- resto de tus estilos del contacto ------- */
     .cont_contacto {
-        width: 70%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .cont_contacto p {
-        font-size: 1.1rem;
-        line-height: 30px;
-    }
-
-    .cont_contacto h2 {
-        font-size: 2.9rem;
-        margin: 10px;
-    }
-
-    .contenedor_arriba {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0 10px;
-        gap: 30px;
-    }
-
-    /*formulario*/
-    .formulario {
         width: 90%;
-        max-width: none;
         margin: 0 auto;
-    }
-
-    .formulario form {
-        padding: 20px;
-    }
-
-    #nombre-apellido {
-
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .formulario textarea {
-        padding: 20px;
-        height: 100px;
-        border-radius: 20px;
-    }
-
-    #boton_enviar {
-        width: 60%;
-        padding: 15px;
-    }
-
-    /*datos de contacto*/
-    .info_contacto {
-        font-size: 1rem;
-        line-height: 40px;
-        padding-left: 0;
-        text-align: left;
-        margin-left: 10px;
-    }
-
-    .flex_li img {
-        width: 20px;
-        height: auto;
-    }
-
-    .flex_li {
-        align-items: center;
-        gap: 10px;
-    }
-
-    /*suscribite*/
-    .cont_suscribite {
-        width: 80%;
-        padding: 25px 15px;
-        border-radius: 40px;
-    }
-
-    .cont_suscribite h3 {
-        font-size: 1.4rem;
-    }
-
-    .cont_suscribite p {
-        font-size: 1rem;
-    }
-
-    .form_suscripcion {
-        flex-direction: column;
-        gap: 10px;
-        width: 90%;
-        overflow: visible;
-    }
-
-    .form_suscripcion input[type="email"] {
-        border-radius: 20px;
+        padding: 10px;
         text-align: center;
-    }
-
-    #boton_sus {
-        border-radius: 40px;
-        padding: 15px 20px;
-        width: 50%;
-        margin: auto;
-    }
-
-    /* FOOTER */
-    .caja_footer {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .caja_footer img {
-        width: 100%;
-        height: auto;
-    }
-
-    .flex_footer p {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-
-    #footer_redes {
-        justify-content: center;
-    }
-
-    #footer_redes a img {
-        width: 20px;
-        height: auto;
     }
 }
