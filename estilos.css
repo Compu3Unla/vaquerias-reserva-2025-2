@@ -767,7 +767,7 @@ p .subtitulo-flora {
 /*COMO LLEGAR*/
 
 #formas_de_llegar{
-    display: flex;
+    margin-left: 95px;
 }
 
 #como_llegar{
@@ -775,7 +775,8 @@ p .subtitulo-flora {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    justify-content: space-evenly;
+    margin: 25px;
 }
 .icon_como_llegar {
     display: flex;
