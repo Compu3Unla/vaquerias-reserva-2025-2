@@ -743,6 +743,7 @@ p .subtitulo-flora {
 .fauna h2 {
     color: var(--color_fondo);
     position: relative;
+    margin-left: 95px;
 }
 
 .flora {
@@ -754,7 +755,7 @@ p .subtitulo-flora {
 
 .flora h2 {
     color: var(--color_terracota);
-
+    margin-left: 95px;
 }
 
 .galeria {
