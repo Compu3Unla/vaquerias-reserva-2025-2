@@ -1384,10 +1384,9 @@ p .subtitulo-flora {
     .icon_como_llegar {
 
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-between;
         gap: 10px;
-        margin-bottom: 15px;
     }
 
     .icon_como_llegar img {
