@@ -629,7 +629,7 @@ p .subtitulo-flora {
 .imagen-reserva img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: cover;
     transition: transform 0.5s ease;
     border-radius: 20px;
 }
@@ -654,15 +654,14 @@ p .subtitulo-flora {
 }
 
 .ver-mas {
-     color: white;
-     font-family: "Montserrat", sans-serif;
-     font-size: 2rem;
-     font-weight: 600;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .imagen-reserva:hover .overlay {
-    opacity: 0.500
-    ;
+    opacity: 0.500;
 }
 
 /*ACTIVIDADES*/
@@ -743,7 +742,6 @@ p .subtitulo-flora {
 .fauna h2 {
     color: var(--color_fondo);
     position: relative;
-    margin-left: 95px;
 }
 
 .flora {
@@ -755,7 +753,7 @@ p .subtitulo-flora {
 
 .flora h2 {
     color: var(--color_terracota);
-    margin-left: 95px;
+
 }
 
 .galeria {
@@ -794,11 +792,11 @@ p .subtitulo-flora {
 
 /*COMO LLEGAR*/
 
-#formas_de_llegar{
+#formas_de_llegar {
     margin-left: 95px;
 }
 
-#como_llegar{
+#como_llegar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -806,6 +804,7 @@ p .subtitulo-flora {
     justify-content: space-evenly;
     margin: 25px;
 }
+
 .icon_como_llegar {
     display: flex;
     flex-wrap: wrap;
@@ -814,30 +813,30 @@ p .subtitulo-flora {
     gap: 25px;
 }
 
-.text_como_llegar{
+.text_como_llegar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.art_como_llegar{
+.art_como_llegar {
     display: flex;
     max-width: 44%;
     gap: 20px;
 }
 
-.foto_mapa{
+.foto_mapa {
     border-radius: 25px;
 }
 
-.mapa_iframe{
+.mapa_iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
 }
 
-.text_horarios{
+.text_horarios {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -1109,7 +1108,7 @@ p .subtitulo-flora {
 
     .texto-aves {
         width: 100%;
-        
+
     }
 
     h2 .italic {
@@ -1126,7 +1125,7 @@ p .subtitulo-flora {
         margin: 0 15px;
         background-color: var(--color_verde);
         border-radius: 20px;
-        
+
     }
 
     .contenido-flora {
@@ -1136,7 +1135,7 @@ p .subtitulo-flora {
         margin: 0 auto;
         transform: none;
         text-align: center;
-        
+
     }
 
     .imagen-contenido img {
@@ -1148,7 +1147,7 @@ p .subtitulo-flora {
 
     .contenido-flora h2 {
         font-size: 1.6rem;
-        
+
     }
 
     p .subtitulo-flora {
@@ -1157,7 +1156,6 @@ p .subtitulo-flora {
 
     }
 }
-    
 
 /*media responsive contacto.html*/
 @media (max-width: 500px) {
@@ -1278,6 +1276,7 @@ p .subtitulo-flora {
         width: 80%;
         padding: 25px 15px;
         border-radius: 40px;
+        margin-bottom: 200px;
     }
 
     .cont_suscribite h3 {
@@ -1307,33 +1306,21 @@ p .subtitulo-flora {
         margin: auto;
     }
 
-    /*footer*/
+    /* --- FOOTER --- */
+
     .caja_footer {
+        height: 150px;
+        background-color: #bc6c25;
         display: flex;
-        justify-content: space-between;
-    }
-
-    .caja_footer img {
-        width: 100%;
-        height: auto;
-    }
-
-    .flex_footer p {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-
-    #footer_redes {
-        justify-content: center;
-    }
-
-    #footer_redes a img {
-        width: 20px;
-        height: auto;
+        align-items: center;
+        margin-top: 100px;
+        
     }
 }
 
-/* Versión responsive de COMO LLEGAR (500px) */
+    
+
+/* Versión responsive de como llegar (500px) */
 
 @media (max-width: 500px) {
 
@@ -1374,16 +1361,16 @@ p .subtitulo-flora {
 
     #como_llegar {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 15px 0; 
+        margin: 15px 0;
     }
 
     .foto_mapa {
         width: 90%;
         height: auto;
-        border-radius: 15px; 
+        border-radius: 15px;
         margin-bottom: 20px;
     }
 
@@ -1391,15 +1378,16 @@ p .subtitulo-flora {
         display: flex;
         max-width: 90%;
         gap: 15px;
-        justify-content: center;
 
     }
 
     .icon_como_llegar {
-        
+
         display: flex;
-        flex-direction: column; 
-        gap: 55px; 
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-bottom: 15px;
     }
 
     .icon_como_llegar img {
@@ -1418,7 +1406,7 @@ p .subtitulo-flora {
     }
 
     .text_como_llegar p {
-        
+
         font-size: 1em;
         margin-bottom: 15px;
     }
@@ -1426,32 +1414,30 @@ p .subtitulo-flora {
     /* --- SECCIÓN DEL IFRAME (MAPA Y HORARIOS) --- */
 
     .mapa_iframe {
-        
+
         padding: 15px 10px;
     }
 
     .text_horarios {
-        
-        display: flex; 
+
+        display: flex;
         gap: 15px;
         text-align: center;
-        font-size: 1rem; 
+        font-size: 1rem;
         margin-bottom: 15px;
     }
-    
+
     .text_horarios img {
-        
+
         display: block;
         margin: 0 auto 5px;
-        width: 40px; 
+        width: 40px;
         height: auto;
     }
 
     .mapa_iframe iframe {
-        
+
         width: 95%;
-        height: 300px; 
+        height: 300px;
     }
 }
-
-/*Versión responsive de La Reserva en pantallas 1366*/
