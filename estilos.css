@@ -1299,72 +1299,98 @@ p .subtitulo-flora {
 }
 
 /* Versión responsive de como llegar (500px) */
+
 @media (max-width: 500px) {
 
-  /* Ajuste general */
-  body {
-    margin: 0;
-    padding: 0;
-  }
+    /* --- ESTILOS DE LA SECCIÓN 'CÓMO LLEGAR' --- */
 
-  #formas_de_llegar {
-    margin-left: 0;
-    text-align: center;
-  }
+    #formas_de_llegar {
+        /* Eliminar el margen lateral excesivo y centrar si es necesario */
+        margin-left: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
 
-  #como_llegar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px auto;
-    gap: 20px;
-  }
+    #como_llegar {
+        /* Deshacer el flexbox horizontal para apilar la imagen y el texto */
+        display: flex;
+        flex-direction: column; /* Apilamiento vertical */
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0; /* Reducir margen */
+    }
 
-  .icon_como_llegar {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
+    .foto_mapa {
+        /* La imagen del mapa debe ocupar casi todo el ancho */
+        width: 90%;
+        height: auto;
+        border-radius: 15px; /* Ajustar el radio si se desea */
+        margin-bottom: 20px;
+    }
 
-  .text_como_llegar {
-    text-align: center;
-    justify-content: center;
-    margin: 0 10px;
-  }
+    .art_como_llegar {
+        /* El contenedor de los íconos y el texto ahora ocupa todo el ancho */
+        display: block; /* Ocupa el 100% del ancho disponible */
+        max-width: 90%; /* Ajuste al 90% del contenedor padre */
+        gap: 0;
+    }
 
-  .art_como_llegar {
-    flex-direction: column;
-    max-width: 90%;
-    align-items: center;
-    gap: 15px;
-  }
+    .icon_como_llegar {
+        /* Los íconos deben apilarse o centrarse mejor para móviles */
+        display: flex;
+        flex-direction: row; /* Mantenerlos en fila, pero más juntos */
+        justify-content: space-evenly;
+        gap: 10px; /* Reducir el espacio entre íconos */
+        margin-bottom: 15px;
+    }
 
-  .foto_mapa {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-  }
+    .icon_como_llegar img {
+        /* Asegurar que los íconos no sean demasiado grandes */
+        width: 40px;
+        height: auto;
+    }
 
-  .mapa_iframe {
-    padding: 10px;
-  }
+    .text_como_llegar {
+        /* El texto debe apilarse verticalmente (el comportamiento por defecto de <p>) */
+        display: block;
+        text-align: center;
+    }
 
-  .mapa_iframe iframe {
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-  }
+    .text_como_llegar p {
+        /* Asegurar legibilidad */
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
 
-  .text_horarios {
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 10px 0;
-  }
+    /* --- SECCIÓN DEL IFRAME (MAPA Y HORARIOS) --- */
 
-  /* Ajustes del header y footer */
-  header, footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-  }
+    .mapa_iframe {
+        /* Ya está en columna, solo ajustamos el padding */
+        padding: 15px 10px;
+    }
+
+    .text_horarios {
+        /* Ajustar el tamaño del texto y el alineamiento */
+        display: block; /* Apilar el ícono y el texto si es necesario */
+        text-align: center;
+        font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+        margin-bottom: 15px;
+    }
+    
+    .text_horarios img {
+        /* Asegurar que el ícono esté centrado si se usa 'display: block' en el padre */
+        display: block;
+        margin: 0 auto 5px;
+        width: 40px; /* Reducir el tamaño del ícono */
+        height: auto;
+    }
+
+    .mapa_iframe iframe {
+        /* El iframe debe ser 100% ancho y tener una altura cómoda para móviles */
+        width: 95%;
+        height: 300px; /* Altura fija adecuada para móviles */
+    }
+
+    /* (Nota: Las adaptaciones del HEADER y FOOTER están en la respuesta anterior
+    y son necesarias para el diseño completo.) */
 }
