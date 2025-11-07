@@ -1337,6 +1337,35 @@ p .subtitulo-flora {
 
 @media (max-width: 500px) {
 
+    /* ESTILOS GENERALES */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section, main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .contenedor_header > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*main*/
+
     #formas_de_llegar {
         margin-left: 0;
         text-align: center;
