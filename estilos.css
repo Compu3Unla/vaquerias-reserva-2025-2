@@ -1494,3 +1494,153 @@ p .subtitulo-flora {
         height: 300px;
     }
 }
+
+
+@media (max-width: 1366px) {
+    .subtitulo-reserva h2 {
+        margin-left: 60px;
+    }
+
+    .subtitulo-reserva p {
+        margin-left: 60px;
+    }
+    /*parte dell video*/
+    .video-reserva {
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+
+    .video-reserva video {
+        max-width: 1100px;
+        height: auto;
+    }
+
+    /*parte del texto abajo del video*/
+    .contenedor2 {
+        padding: 20px 20px;
+    }
+
+    .bloque {
+        gap: 80px;
+    }
+
+    .texto-reserva h2 {
+        font-size: 1.6rem;
+        margin-left: 45px;
+    }
+
+    .texto-reserva p {
+        font-size: 1.1rem;
+        margin-left: 45px;
+        width: 500px;
+    }
+
+    .imagen-reserva img {
+        width: 90%;
+        height: 90%;
+    }
+
+    /*parte fauna*/
+    .img-container img {
+        width: 80%;
+    }
+
+    .fauna-reserva p {
+        font-size: 1.2rem;
+    }
+
+    /*parte de aves*/
+    .seccion-aves {
+        gap: 10px;
+    }
+    .texto-aves {
+        width: 500px;
+    }
+
+    h2 .italic {
+        font-size: 3rem;
+    }
+
+    p .numeros {
+        font-size: 4.8rem;
+    }
+
+    p .grande {
+        font-size: 4.8rem;
+    }
+
+    .aves img {
+        width: 80%;
+    }
+
+    /*la parte de flora*/
+    .flora2 h2 {
+        font-size: 3rem;
+    }
+
+    p .subtitulo-flora {
+        font-size: 1.6rem;
+    }
+    
+    .flora2 p {
+        font-size: 1rem;
+    }
+
+    .imagen-contenido img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido-flora {
+        transform: translateY(200px);
+    }
+
+    .overlay {
+        width: 90%;
+        height: 90%;
+        transition: opacity 0.4s ease;
+    }
+
+    .imagen-reserva:hover img {
+        width: 90%;
+        height: 90%;
+        transform: scale(1.0);
+    }
+
+    /*header*/
+    .contenedor_header img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedor_header h1 {
+        font-size: 3.5rem;
+        transform: translateX(-50%) translateY(-35%);
+    }
+
+    /*nav*/
+    .botonera_nav {
+        gap: 25px;
+    }
+
+    .boton_html {
+        font-size: 0.9rem;
+        border: 2.8px solid var(--color_verde);
+        padding: 6px 20px;
+    }
+
+    .contenedor_header nav {
+        top: -10px;
+    }
+
+    .boton_index img {
+        width:69px;
+        height: 47px;
+    }
+
+    /*footer*/
+    .caja_footer img {
+        width: 100%;
+        height: auto;
+    }
+}
