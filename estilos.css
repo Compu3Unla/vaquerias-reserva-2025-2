@@ -1297,3 +1297,74 @@ p .subtitulo-flora {
         height: auto;
     }
 }
+
+/* Versión responsive de como llegar (500px) */
+@media (max-width: 500px) {
+
+  /* Ajuste general */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #formas_de_llegar {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #como_llegar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .icon_como_llegar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .text_como_llegar {
+    text-align: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .art_como_llegar {
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .foto_mapa {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .mapa_iframe {
+    padding: 10px;
+  }
+
+  .mapa_iframe iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+  }
+
+  .text_horarios {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Ajustes del header y footer */
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+}
