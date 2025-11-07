@@ -792,7 +792,11 @@ p .subtitulo-flora {
 .mapa_iframe{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.text_horarios{
+    display: flex;
 }
 
 /* CONTACTO */
