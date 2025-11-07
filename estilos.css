@@ -583,6 +583,7 @@ p .subtitulo-flora {
     max-width: 700px;
 }
 
+
 .imagen-reserva {
     position: relative;
     width: 750px;
@@ -626,7 +627,8 @@ p .subtitulo-flora {
 }
 
 .imagen-reserva:hover .overlay {
-    opacity: 0.8;
+    opacity: 0.500
+    ;
 }
 
 /*ACTIVIDADES*/
@@ -762,7 +764,6 @@ p .subtitulo-flora {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     margin: 20px;
 }
 .icon_como_llegar {
@@ -781,7 +782,7 @@ p .subtitulo-flora {
 
 .art_como_llegar{
     display: flex;
-    max-width: 36%;
+    max-width: 41%;
     gap: 20px;
 }
 
@@ -970,7 +971,7 @@ p .subtitulo-flora {
 /*MEDIA RESPONSIVE*/
 
 /*media responsive para lareserva.html*/
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
     html,
     body {
@@ -1168,8 +1169,9 @@ p .subtitulo-flora {
 
     /*sección arriba*/
     .cont_contacto {
-        width: 70%;
-        margin: auto;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
         text-align: center;
     }
 
