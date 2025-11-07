@@ -766,6 +766,10 @@ p .subtitulo-flora {
 
 /*COMO LLEGAR*/
 
+#formas_de_llegar{
+    display: flex;
+}
+
 #como_llegar{
     display: flex;
     flex-wrap: wrap;
@@ -810,10 +814,6 @@ p .subtitulo-flora {
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     color: #3f4021;
-}
-
-.art_como_llegar h2{
-    display: flex;
 }
 
 /* CONTACTO */
