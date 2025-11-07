@@ -793,10 +793,15 @@ p .subtitulo-flora {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 25px;
 }
 
 .text_horarios{
     display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    color: #3f4021;
 }
 
 /* CONTACTO */
