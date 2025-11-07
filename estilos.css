@@ -1333,7 +1333,7 @@ p .subtitulo-flora {
     }
 }
 
-/* Versión responsive de como llegar (500px) */
+/* Versión responsive de COMO LLEGAR (500px) */
 
 @media (max-width: 500px) {
 
@@ -1370,9 +1370,7 @@ p .subtitulo-flora {
         
         display: flex;
         flex-direction: column; 
-        justify-content: space-evenly;
-        gap: 10px; 
-        margin-bottom: 15px;
+        gap: 55px; 
     }
 
     .icon_como_llegar img {
