@@ -766,14 +766,14 @@ p .subtitulo-flora {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: space-evenly;
+    margin: 25px;
 }
 .icon_como_llegar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 25px;
 }
 
